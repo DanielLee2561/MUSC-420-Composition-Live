@@ -2,8 +2,8 @@
 	"name" : "Max",
 	"version" : 1,
 	"creationdate" : 3820455764,
-	"modificationdate" : 3820545701,
-	"viewrect" : [ 25.0, 133.0, 300.0, 474.0 ],
+	"modificationdate" : 3820878022,
+	"viewrect" : [ 25.0, 159.0, 300.0, 448.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -77,6 +77,6 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 0,
-	"viewmode" : 0,
+	"viewmode" : 1,
 	"includepackages" : 0
 }
