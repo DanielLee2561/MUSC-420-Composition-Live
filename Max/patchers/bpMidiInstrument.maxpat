@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1119.0, 690.0 ],
+		"rect" : [ 34.0, 76.0, 973.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -179,7 +179,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 452.0, 179.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 452.0, 179.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -265,7 +265,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 428.0, 178.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 428.0, 178.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -543,7 +543,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 404.0, 178.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 404.0, 178.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -677,7 +677,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 380.0, 173.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 380.0, 173.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -763,7 +763,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 303.0, 170.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 303.0, 170.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -801,7 +801,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 279.0, 125.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 279.0, 125.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -839,7 +839,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 255.0, 125.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 255.0, 125.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -889,7 +889,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 176.0, 95.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 176.0, 95.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -939,7 +939,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 152.0, 95.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 152.0, 95.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -993,7 +993,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 128.0, 96.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 128.0, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -1047,7 +1047,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 104.0, 96.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 104.0, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -1101,7 +1101,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 80.0, 96.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 80.0, 96.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -1131,7 +1131,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 56.0, 68.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 56.0, 68.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -1152,14 +1152,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1119.0, 634.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1535,7 +1535,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 931.0, 32.0, 57.0, 22.0 ],
+					"patching_rect" : [ 1170.0, 32.0, 57.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 1,
 						"precision" : 6
@@ -1568,14 +1568,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1119.0, 634.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2377,7 +2377,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 931.0, 612.0, 110.0, 20.0 ],
+					"patching_rect" : [ 1170.0, 612.0, 110.0, 20.0 ],
 					"text" : "Pattern Data"
 				}
 
@@ -3071,7 +3071,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 161.0, 612.0, 213.0, 34.0 ],
+					"patching_rect" : [ 161.0, 702.0, 213.0, 34.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 20.0, 20.0, 280.0, 34.0 ],
 					"text" : "Midi Instrument",
@@ -3082,16 +3082,15 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
+					"bgcolor" : [ 0.8, 1.0, 0.8, 1.0 ],
 					"border" : 2,
 					"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-					"grad1" : [ 0.8, 1.0, 0.8, 1.0 ],
-					"grad2" : [ 0.501960784313725, 0.8, 0.501960784313725, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "panel",
-					"mode" : 1,
+					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 31.0, 518.0, 128.0, 128.0 ],
+					"patching_rect" : [ 31.0, 608.0, 128.0, 128.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 10.0, 540.0, 170.0 ],
 					"proportion" : 0.5
@@ -3430,24 +3429,31 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "aSynthesizer.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
+				"name" : "Kontakt.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Kontakt_20220407.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../../../../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Kontakt.maxsnap",
+				"name" : "Kontakt_20250127.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../../../../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aSynthesizer.maxpat",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

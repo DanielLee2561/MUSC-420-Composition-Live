@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 41.0, 84.0, 719.0, 690.0 ],
+		"rect" : [ 34.0, 76.0, 973.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -88,14 +88,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 719.0, 638.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -208,13 +208,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 									"id" : "obj-4",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 45.0, 502.0, 128.0, 128.0 ],
@@ -273,13 +272,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 									"id" : "obj-3",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 503.0, 128.0, 128.0 ],
@@ -349,14 +347,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 41.0, 136.0, 719.0, 638.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -502,13 +500,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 									"id" : "obj-14",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 39.0, 509.0, 128.0, 128.0 ],
@@ -521,13 +518,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 									"id" : "obj-3",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 509.0, 128.0, 128.0 ],
@@ -540,13 +536,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 									"id" : "obj-5",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 45.0, 524.0, 128.0, 128.0 ],
@@ -704,14 +699,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 719.0, 638.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -789,13 +784,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 									"id" : "obj-22",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 60.0, 503.0, 128.0, 128.0 ],
@@ -854,13 +848,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 									"id" : "obj-19",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 45.0, 503.0, 128.0, 128.0 ],
@@ -919,13 +912,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-									"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 									"id" : "obj-3",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 503.0, 128.0, 128.0 ],
@@ -982,14 +974,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 719.0, 638.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1132,13 +1124,12 @@
 , 							{
 								"box" : 								{
 									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"border" : 2,
 									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-									"grad1" : [ 0.901960784313726, 0.901960784313726, 0.901960784313726, 1.0 ],
-									"grad2" : [ 0.6, 0.6, 0.6, 1.0 ],
 									"id" : "obj-9",
 									"maxclass" : "panel",
-									"mode" : 1,
+									"mode" : 0,
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 30.0, 504.0, 128.0, 128.0 ],
@@ -1188,27 +1179,27 @@
 						"styles" : [ 							{
 								"name" : "hamel010Object",
 								"default" : 								{
-									"fontface" : [ 0 ],
-									"fontsize" : [ 16.0 ],
-									"stripecolor" : [ 0.443137254901961, 0.627450980392157, 0.341176470588235, 1.0 ],
+									"accentcolor" : [ 0.745098039215686, 0.015686274509804, 0.015686274509804, 1.0 ],
 									"bgcolor" : [ 0.027450980392157, 0.07843137254902, 0.733333333333333, 1.0 ],
-									"patchlinecolor" : [ 0.031372549019608, 0.698039215686274, 0.533333333333333, 1.0 ],
 									"bgfillcolor" : 									{
-										"type" : "gradient",
+										"angle" : 270.0,
+										"autogradient" : 0.0,
 										"color" : [ 0.2, 0.2, 0.2, 1.0 ],
 										"color1" : [ 0.807843137254902, 0.011764705882353, 0.988235294117647, 1.0 ],
 										"color2" : [ 0.196078431372549, 0.196078431372549, 0.196078431372549, 1.0 ],
-										"angle" : 270.0,
 										"proportion" : 0.5,
-										"autogradient" : 0.0
+										"type" : "gradient"
 									}
 ,
-									"accentcolor" : [ 0.745098039215686, 0.015686274509804, 0.015686274509804, 1.0 ],
-									"editing_bgcolor" : [ 0.866666666666667, 0.819607843137255, 0.819607843137255, 1.0 ],
 									"color" : [ 0.976470588235294, 0.788235294117647, 0.572549019607843, 1.0 ],
-									"selectioncolor" : [ 0.941176470588235, 0.941176470588235, 0.796078431372549, 1.0 ],
+									"editing_bgcolor" : [ 0.866666666666667, 0.819607843137255, 0.819607843137255, 1.0 ],
 									"elementcolor" : [ 0.407843137254902, 0.607843137254902, 0.43921568627451, 1.0 ],
-									"locked_bgcolor" : [ 0.941176470588235, 0.905882352941176, 0.764705882352941, 1.0 ]
+									"fontface" : [ 0 ],
+									"fontsize" : [ 16.0 ],
+									"locked_bgcolor" : [ 0.941176470588235, 0.905882352941176, 0.764705882352941, 1.0 ],
+									"patchlinecolor" : [ 0.031372549019608, 0.698039215686274, 0.533333333333333, 1.0 ],
+									"selectioncolor" : [ 0.941176470588235, 0.941176470588235, 0.796078431372549, 1.0 ],
+									"stripecolor" : [ 0.443137254901961, 0.627450980392157, 0.341176470588235, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -1268,13 +1259,12 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"border" : 2,
 					"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-					"grad1" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"grad2" : [ 0.8, 0.8, 0.8, 1.0 ],
 					"id" : "obj-3",
 					"maxclass" : "panel",
-					"mode" : 1,
+					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 45.0, 502.0, 128.0, 128.0 ],
@@ -1407,71 +1397,78 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "bpMidiInstrument.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
+				"name" : "Kontakt.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Kontakt_20220407.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Kontakt_20250127.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aPanning.maxpat",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "aSynthesizer.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Kontakt_20220407.maxsnap",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Kontakt.maxsnap",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../../../../../../Documents/Max 8/Snapshots",
-				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bpFXUnit.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "aPanning.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bpUserInstrument.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bpGlobalControls.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bpMicrophoneInstrument.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bpMidiInstrument.maxpat",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bpMidiRecorder.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bpUserInstrument.maxpat",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

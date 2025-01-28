@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1119.0, 690.0 ],
+		"rect" : [ 34.0, 76.0, 973.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -390,14 +390,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 2,
-							"revision" : 1,
+							"minor" : 6,
+							"revision" : 5,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 41.0, 109.0, 638.0, 478.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -426,7 +426,6 @@
 						"subpatcher_template" : "",
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-4",
@@ -1324,13 +1323,12 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
+					"bgcolor" : [ 0.8, 1.0, 0.8, 1.0 ],
 					"border" : 2,
 					"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-					"grad1" : [ 0.8, 1.0, 0.8, 1.0 ],
-					"grad2" : [ 0.501960784313725, 0.8, 0.501960784313725, 1.0 ],
 					"id" : "obj-77",
 					"maxclass" : "panel",
-					"mode" : 1,
+					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 43.0, 503.0, 128.0, 128.0 ],
@@ -1343,13 +1341,12 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
+					"bgcolor" : [ 0.501960784313725, 0.8, 0.501960784313725, 1.0 ],
 					"border" : 2,
 					"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-					"grad1" : [ 0.501960784313725, 0.8, 0.501960784313725, 1.0 ],
-					"grad2" : [ 0.2, 0.501960784313725, 0.2, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "panel",
-					"mode" : 1,
+					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.0, 503.0, 128.0, 128.0 ],
@@ -1780,24 +1777,31 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "aSynthesizer.maxpat",
-				"bootpath" : "~/OneDrive/Desktop/Reality/Education/School Post-Secondary/University of British Columbia/ubc Classes/Year 2 Term 2/MUSC 320/wrk Assignments/A6 Composition Studio/Project Files (Patches)",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
+				"name" : "Kontakt.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Kontakt_20220407.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../../../../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Kontakt.maxsnap",
+				"name" : "Kontakt_20250127.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../../../../../../Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aSynthesizer.maxpat",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],

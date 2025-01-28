@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
-			"revision" : 1,
+			"minor" : 6,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1119.0, 690.0 ],
+		"rect" : [ 34.0, 76.0, 973.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -297,13 +297,12 @@
 , 			{
 				"box" : 				{
 					"angle" : 270.0,
+					"bgcolor" : [ 0.8, 0.8, 1.0, 1.0 ],
 					"border" : 2,
 					"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
-					"grad1" : [ 0.8, 0.8, 1.0, 1.0 ],
-					"grad2" : [ 0.501960784313725, 0.501960784313725, 0.8, 1.0 ],
 					"id" : "obj-9",
 					"maxclass" : "panel",
-					"mode" : 1,
+					"mode" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 31.0, 518.0, 128.0, 128.0 ],
