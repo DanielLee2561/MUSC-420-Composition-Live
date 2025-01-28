@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 973.0, 791.0 ],
+		"rect" : [ 34.0, 76.0, 1373.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -95,7 +95,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -354,7 +354,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -706,7 +706,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -981,7 +981,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
+						"rect" : [ 34.0, 102.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1045,20 +1045,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 30.0, 73.0, 64.0, 22.0 ],
+									"patching_rect" : [ 30.0, 49.0, 64.0, 22.0 ],
 									"text" : "controllers"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-3",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 30.0, 49.0, 58.0, 22.0 ],
-									"text" : "loadbang"
 								}
 
 							}
@@ -1069,7 +1057,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 30.0, 97.0, 50.0, 22.0 ],
+									"patching_rect" : [ 30.0, 73.0, 50.0, 22.0 ],
 									"text" : "midiinfo"
 								}
 
@@ -1080,7 +1068,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 190.0, 108.0, 22.0 ],
+									"patching_rect" : [ 30.0, 166.0, 108.0, 22.0 ],
 									"text" : "s settingsMidiInput"
 								}
 
@@ -1092,7 +1080,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 30.0, 121.0, 79.0, 20.0 ],
+									"patching_rect" : [ 30.0, 97.0, 79.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 130.0, 70.0, 70.0, 20.0 ],
 									"text" : "MIDI Input"
@@ -1115,7 +1103,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "int", "", "" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 30.0, 166.0, 100.0, 22.0 ],
+									"patching_rect" : [ 30.0, 142.0, 100.0, 22.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 70.0, 100.0, 22.0 ]
 								}
@@ -1142,7 +1130,7 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
+									"destination" : [ "obj-57", 0 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -1158,13 +1146,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-20", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-57", 0 ],
-									"source" : [ "obj-3", 0 ]
 								}
 
 							}
