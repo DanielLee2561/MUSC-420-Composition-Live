@@ -841,6 +841,18 @@
 										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
+													"fontface" : 1,
+													"id" : "obj-2",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 145.0, 368.0, 51.0, 20.0 ],
+													"text" : "Safety"
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-8",
 													"maxclass" : "newobj",
 													"numinlets" : 2,
@@ -858,7 +870,7 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "bang" ],
-													"patching_rect" : [ 144.0, 473.0, 54.0, 22.0 ],
+													"patching_rect" : [ 145.0, 344.0, 54.0, 22.0 ],
 													"text" : "delay 10"
 												}
 
