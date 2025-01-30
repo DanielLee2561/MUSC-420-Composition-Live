@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 973.0, 791.0 ],
+		"rect" : [ 34.0, 76.0, 1373.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -540,6 +540,7 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-33::obj-14" : [ "vst~[1]", "vst~[1]", 0 ],
 			"obj-33::obj-33" : [ "vst~", "vst~", 0 ],
 			"parameterbanks" : 			{
 
@@ -549,6 +550,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Kontakt 8.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Kontakt.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
