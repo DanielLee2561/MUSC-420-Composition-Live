@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1474.0, 77.0, 1852.0, 969.0 ],
+		"rect" : [ 36.0, 79.0, 1369.0, 786.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -231,7 +231,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1852.0, 943.0 ],
+						"rect" : [ 0.0, 26.0, 1369.0, 760.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -647,7 +647,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1852.0, 943.0 ],
+						"rect" : [ 36.0, 105.0, 1369.0, 760.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2125,7 +2125,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-59",
-					"items" : [ "None", ",", "Note_Single", ",", "Note_1353", ",", "Note_158X", ",", "Chord_MajorTriad", ",", "Test" ],
+					"items" : [ "None", ",", "Note_Single", ",", "Note_1353", ",", "Note_158X", ",", "Chord_MajorTriad", ",", "Test", ",", "User_1", ",", "User_2", ",", "User_3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
