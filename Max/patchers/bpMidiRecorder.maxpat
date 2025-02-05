@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1474.0, 77.0, 1452.0, 969.0 ],
+		"rect" : [ 1474.0, 77.0, 1852.0, 969.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -318,7 +318,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
-					"items" : [ "None", ",", "Piano", ",", "Flute", ",", "Guitar", ",", "Trumpet", ",", "Bass", ",", "String", ",", "Synthesizer", ",", "Voice" ],
+					"items" : [ "None", ",", "Piano", ",", "Flute", ",", "Guitar", ",", "Organ", ",", "Trumpet", ",", "Vibraphone", ",", "Shakuhachi" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -420,7 +420,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 1474.0, 103.0, 1452.0, 943.0 ],
+						"rect" : [ 0.0, 26.0, 1852.0, 943.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -711,7 +711,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 236.75, 113.0, 29.5, 22.0 ],
-									"text" : "2n"
+									"text" : "1n"
 								}
 
 							}
@@ -1230,6 +1230,15 @@
 			}
 , 			{
 				"box" : 				{
+					"coll_data" : 					{
+						"count" : 1,
+						"data" : [ 							{
+								"key" : 0,
+								"value" : [ "4n" ]
+							}
+ ]
+					}
+,
 					"id" : "obj-22",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -1237,7 +1246,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 675.0, 373.0, 50.5, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 0,
+						"embed" : 1,
 						"precision" : 6
 					}
 ,

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1373.0, 791.0 ],
+		"rect" : [ 1472.0, 74.0, 1456.0, 974.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -283,7 +283,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-3",
-					"items" : [ "None", ",", "Piano", ",", "Flute", ",", "Guitar", ",", "Trumpet", ",", "Bass", ",", "String", ",", "Synthesizer", ",", "Voice" ],
+					"items" : [ "None", ",", "Piano", ",", "Flute", ",", "Guitar", ",", "Organ", ",", "Trumpet", ",", "Vibraphone", ",", "Shakuhachi" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
