@@ -132,8 +132,8 @@ GameObject:
   - component: {fileID: 157643328}
   - component: {fileID: 157643327}
   m_Layer: 0
-  m_Name: Key D
-  m_TagString: Untagged
+  m_Name: Key_D
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,8 +240,8 @@ GameObject:
   - component: {fileID: 164156305}
   - component: {fileID: 164156304}
   m_Layer: 0
-  m_Name: Key A#
-  m_TagString: Untagged
+  m_Name: Key_A#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -348,8 +348,8 @@ GameObject:
   - component: {fileID: 291921591}
   - component: {fileID: 291921590}
   m_Layer: 0
-  m_Name: Key C
-  m_TagString: Untagged
+  m_Name: Key_C
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 399418623}
   m_Layer: 0
   m_Name: Octave_C5
-  m_TagString: Untagged
+  m_TagString: Octave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -667,8 +667,8 @@ GameObject:
   - component: {fileID: 425628665}
   - component: {fileID: 425628664}
   m_Layer: 0
-  m_Name: Key A#
-  m_TagString: Untagged
+  m_Name: Key_A#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -775,8 +775,8 @@ GameObject:
   - component: {fileID: 430024277}
   - component: {fileID: 430024276}
   m_Layer: 0
-  m_Name: Key C#
-  m_TagString: Untagged
+  m_Name: Key_C#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -883,8 +883,8 @@ GameObject:
   - component: {fileID: 498887444}
   - component: {fileID: 498887443}
   m_Layer: 0
-  m_Name: Key C#
-  m_TagString: Untagged
+  m_Name: Key_C#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -989,7 +989,7 @@ GameObject:
   - component: {fileID: 540142336}
   m_Layer: 0
   m_Name: Octave_C4
-  m_TagString: Untagged
+  m_TagString: Octave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1034,8 +1034,8 @@ GameObject:
   - component: {fileID: 548844377}
   - component: {fileID: 548844376}
   m_Layer: 0
-  m_Name: Key D
-  m_TagString: Untagged
+  m_Name: Key_D
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1142,8 +1142,8 @@ GameObject:
   - component: {fileID: 585985697}
   - component: {fileID: 585985696}
   m_Layer: 0
-  m_Name: Key F#
-  m_TagString: Untagged
+  m_Name: Key_F#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1250,8 +1250,8 @@ GameObject:
   - component: {fileID: 648214639}
   - component: {fileID: 648214638}
   m_Layer: 0
-  m_Name: Key G
-  m_TagString: Untagged
+  m_Name: Key_G
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1358,8 +1358,8 @@ GameObject:
   - component: {fileID: 696184479}
   - component: {fileID: 696184478}
   m_Layer: 0
-  m_Name: Key F
-  m_TagString: Untagged
+  m_Name: Key_F
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1464,7 +1464,7 @@ GameObject:
   - component: {fileID: 733829753}
   m_Layer: 0
   m_Name: Octave_C3
-  m_TagString: Untagged
+  m_TagString: Octave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1507,7 +1507,7 @@ GameObject:
   - component: {fileID: 737984170}
   m_Layer: 0
   m_Name: Octave_C2
-  m_TagString: Untagged
+  m_TagString: Octave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1552,8 +1552,8 @@ GameObject:
   - component: {fileID: 744182344}
   - component: {fileID: 744182343}
   m_Layer: 0
-  m_Name: Key C#
-  m_TagString: Untagged
+  m_Name: Key_C#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1660,8 +1660,8 @@ GameObject:
   - component: {fileID: 769089443}
   - component: {fileID: 769089442}
   m_Layer: 0
-  m_Name: Key A
-  m_TagString: Untagged
+  m_Name: Key_A
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1768,8 +1768,8 @@ GameObject:
   - component: {fileID: 807497044}
   - component: {fileID: 807497043}
   m_Layer: 0
-  m_Name: Key D
-  m_TagString: Untagged
+  m_Name: Key_D
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1876,8 +1876,8 @@ GameObject:
   - component: {fileID: 833157207}
   - component: {fileID: 833157206}
   m_Layer: 0
-  m_Name: Key C
-  m_TagString: Untagged
+  m_Name: Key_C
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1984,8 +1984,8 @@ GameObject:
   - component: {fileID: 834779306}
   - component: {fileID: 834779305}
   m_Layer: 0
-  m_Name: Key D#
-  m_TagString: Untagged
+  m_Name: Key_D#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2092,8 +2092,8 @@ GameObject:
   - component: {fileID: 875688087}
   - component: {fileID: 875688086}
   m_Layer: 0
-  m_Name: Key F#
-  m_TagString: Untagged
+  m_Name: Key_F#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2200,8 +2200,8 @@ GameObject:
   - component: {fileID: 905702538}
   - component: {fileID: 905702537}
   m_Layer: 0
-  m_Name: Key D#
-  m_TagString: Untagged
+  m_Name: Key_D#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2308,8 +2308,8 @@ GameObject:
   - component: {fileID: 931909723}
   - component: {fileID: 931909722}
   m_Layer: 0
-  m_Name: Key E
-  m_TagString: Untagged
+  m_Name: Key_E
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2416,8 +2416,8 @@ GameObject:
   - component: {fileID: 1032961910}
   - component: {fileID: 1032961909}
   m_Layer: 0
-  m_Name: Key A
-  m_TagString: Untagged
+  m_Name: Key_A
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2524,8 +2524,8 @@ GameObject:
   - component: {fileID: 1057136019}
   - component: {fileID: 1057136018}
   m_Layer: 0
-  m_Name: Key C
-  m_TagString: Untagged
+  m_Name: Key_C
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2632,8 +2632,8 @@ GameObject:
   - component: {fileID: 1090750962}
   - component: {fileID: 1090750961}
   m_Layer: 0
-  m_Name: Key E
-  m_TagString: Untagged
+  m_Name: Key_E
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2740,8 +2740,8 @@ GameObject:
   - component: {fileID: 1092680580}
   - component: {fileID: 1092680579}
   m_Layer: 0
-  m_Name: Key D
-  m_TagString: Untagged
+  m_Name: Key_D
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2848,8 +2848,8 @@ GameObject:
   - component: {fileID: 1112847547}
   - component: {fileID: 1112847546}
   m_Layer: 0
-  m_Name: Key B
-  m_TagString: Untagged
+  m_Name: Key_B
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2956,8 +2956,8 @@ GameObject:
   - component: {fileID: 1113413194}
   - component: {fileID: 1113413193}
   m_Layer: 0
-  m_Name: Key A#
-  m_TagString: Untagged
+  m_Name: Key_A#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3064,8 +3064,8 @@ GameObject:
   - component: {fileID: 1172831335}
   - component: {fileID: 1172831334}
   m_Layer: 0
-  m_Name: Key F
-  m_TagString: Untagged
+  m_Name: Key_F
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3172,8 +3172,8 @@ GameObject:
   - component: {fileID: 1245229727}
   - component: {fileID: 1245229726}
   m_Layer: 0
-  m_Name: Key G
-  m_TagString: Untagged
+  m_Name: Key_G
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3280,8 +3280,8 @@ GameObject:
   - component: {fileID: 1352490890}
   - component: {fileID: 1352490889}
   m_Layer: 0
-  m_Name: Key F
-  m_TagString: Untagged
+  m_Name: Key_F
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3388,8 +3388,8 @@ GameObject:
   - component: {fileID: 1359272962}
   - component: {fileID: 1359272961}
   m_Layer: 0
-  m_Name: Key G#
-  m_TagString: Untagged
+  m_Name: Key_G#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3496,8 +3496,8 @@ GameObject:
   - component: {fileID: 1365263151}
   - component: {fileID: 1365263150}
   m_Layer: 0
-  m_Name: Key G
-  m_TagString: Untagged
+  m_Name: Key_G
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3604,8 +3604,8 @@ GameObject:
   - component: {fileID: 1402674365}
   - component: {fileID: 1402674364}
   m_Layer: 0
-  m_Name: Key D#
-  m_TagString: Untagged
+  m_Name: Key_D#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3712,8 +3712,8 @@ GameObject:
   - component: {fileID: 1405233510}
   - component: {fileID: 1405233509}
   m_Layer: 0
-  m_Name: Key E
-  m_TagString: Untagged
+  m_Name: Key_E
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3820,8 +3820,8 @@ GameObject:
   - component: {fileID: 1426306498}
   - component: {fileID: 1426306497}
   m_Layer: 0
-  m_Name: Key A
-  m_TagString: Untagged
+  m_Name: Key_A
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3928,8 +3928,8 @@ GameObject:
   - component: {fileID: 1446661051}
   - component: {fileID: 1446661050}
   m_Layer: 0
-  m_Name: Key D#
-  m_TagString: Untagged
+  m_Name: Key_D#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4157,8 +4157,8 @@ GameObject:
   - component: {fileID: 1466200412}
   - component: {fileID: 1466200411}
   m_Layer: 0
-  m_Name: Key G#
-  m_TagString: Untagged
+  m_Name: Key_G#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4265,8 +4265,8 @@ GameObject:
   - component: {fileID: 1474622357}
   - component: {fileID: 1474622356}
   m_Layer: 0
-  m_Name: Key G
-  m_TagString: Untagged
+  m_Name: Key_G
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4373,8 +4373,8 @@ GameObject:
   - component: {fileID: 1523525921}
   - component: {fileID: 1523525920}
   m_Layer: 0
-  m_Name: Key C
-  m_TagString: Untagged
+  m_Name: Key_C
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4481,8 +4481,8 @@ GameObject:
   - component: {fileID: 1559053390}
   - component: {fileID: 1559053389}
   m_Layer: 0
-  m_Name: Key C#
-  m_TagString: Untagged
+  m_Name: Key_C#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4589,8 +4589,8 @@ GameObject:
   - component: {fileID: 1601577719}
   - component: {fileID: 1601577718}
   m_Layer: 0
-  m_Name: Key G#
-  m_TagString: Untagged
+  m_Name: Key_G#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4697,8 +4697,8 @@ GameObject:
   - component: {fileID: 1630130399}
   - component: {fileID: 1630130398}
   m_Layer: 0
-  m_Name: Key B
-  m_TagString: Untagged
+  m_Name: Key_B
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4805,8 +4805,8 @@ GameObject:
   - component: {fileID: 1710284306}
   - component: {fileID: 1710284305}
   m_Layer: 0
-  m_Name: Key A
-  m_TagString: Untagged
+  m_Name: Key_A
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4913,8 +4913,8 @@ GameObject:
   - component: {fileID: 1764110153}
   - component: {fileID: 1764110152}
   m_Layer: 0
-  m_Name: Key B
-  m_TagString: Untagged
+  m_Name: Key_B
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5021,8 +5021,8 @@ GameObject:
   - component: {fileID: 1846369725}
   - component: {fileID: 1846369724}
   m_Layer: 0
-  m_Name: Key B
-  m_TagString: Untagged
+  m_Name: Key_B
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5129,8 +5129,8 @@ GameObject:
   - component: {fileID: 1912256749}
   - component: {fileID: 1912256748}
   m_Layer: 0
-  m_Name: Key E
-  m_TagString: Untagged
+  m_Name: Key_E
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5237,8 +5237,8 @@ GameObject:
   - component: {fileID: 1960056578}
   - component: {fileID: 1960056577}
   m_Layer: 0
-  m_Name: Key F#
-  m_TagString: Untagged
+  m_Name: Key_F#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5345,8 +5345,8 @@ GameObject:
   - component: {fileID: 1977908720}
   - component: {fileID: 1977908719}
   m_Layer: 0
-  m_Name: Key G#
-  m_TagString: Untagged
+  m_Name: Key_G#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5453,8 +5453,8 @@ GameObject:
   - component: {fileID: 2084741387}
   - component: {fileID: 2084741386}
   m_Layer: 0
-  m_Name: Key F
-  m_TagString: Untagged
+  m_Name: Key_F
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5561,8 +5561,8 @@ GameObject:
   - component: {fileID: 2085775328}
   - component: {fileID: 2085775327}
   m_Layer: 0
-  m_Name: Key F#
-  m_TagString: Untagged
+  m_Name: Key_F#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5669,8 +5669,8 @@ GameObject:
   - component: {fileID: 2107659242}
   - component: {fileID: 2107659241}
   m_Layer: 0
-  m_Name: Key A#
-  m_TagString: Untagged
+  m_Name: Key_A#
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
