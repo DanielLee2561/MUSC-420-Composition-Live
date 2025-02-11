@@ -621,7 +621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 399418623}
   m_Layer: 0
-  m_Name: Octave_C5
+  m_Name: Octave_5
   m_TagString: Octave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -988,7 +988,7 @@ GameObject:
   m_Component:
   - component: {fileID: 540142336}
   m_Layer: 0
-  m_Name: Octave_C4
+  m_Name: Octave_4
   m_TagString: Octave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1463,7 +1463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 733829753}
   m_Layer: 0
-  m_Name: Octave_C3
+  m_Name: Octave_3
   m_TagString: Octave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1506,7 +1506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 737984170}
   m_Layer: 0
-  m_Name: Octave_C2
+  m_Name: Octave_2
   m_TagString: Octave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
