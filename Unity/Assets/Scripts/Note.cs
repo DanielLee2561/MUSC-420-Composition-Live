@@ -6,6 +6,7 @@ public class Note : MonoBehaviour
     // OSC
     public OSC osc;
     public string oscNote;
+    public string oscState;
 
     // Variable
     private Dictionary<int, Transform> keys = new Dictionary<int, Transform>();
@@ -46,7 +47,11 @@ public class Note : MonoBehaviour
     void Start()
     {
         // OSC
-        if (osc) osc.SetAddressHandler(oscNote, setNote);
+        if (osc)
+        {
+            osc.SetAddressHandler(oscNote, setNote);
+            osc.SetAddressHandler(oscState, setState);
+        }
 
         // Variable
         assignKeys();
@@ -72,6 +77,7 @@ public class Note : MonoBehaviour
         return key[^1] != '#';
     }
 
+    // Initialize keys
     private void assignKeys()
     {
         GameObject[] octaves = GameObject.FindGameObjectsWithTag("Octave");
@@ -80,17 +86,41 @@ public class Note : MonoBehaviour
                 keys[keyToPitch(octave.name, key.name)] = key;
     }
 
+    // Trigger note-on
+    private void noteOn(int pitch)
+    {
+        keys[pitch].GetComponent<Renderer>().material = keyPress;
+    }
+
+    // Trigger note-off
+    private void noteOff(int pitch)
+    {
+        keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
+    }
+
     private void setNote(OscMessage input)
     {
         int pitch = input.GetInt(0);
         int velocity = input.GetInt(1);
         if (velocity != 0)
         {
-            keys[pitch].GetComponent<Renderer>().material = keyPress;
+            noteOn(pitch);
         }
         else
         {
-            keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
+            noteOff(pitch);
+        }
+    }
+
+    private void setState(OscMessage input)
+    {
+        int state = input.GetInt(0);
+        if (state == 0)
+        {
+            foreach (int pitch in keys.Keys)
+            {
+                noteOff(pitch);
+            }
         }
     }
 }

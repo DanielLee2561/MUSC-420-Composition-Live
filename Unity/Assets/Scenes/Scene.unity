@@ -611,6 +611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   osc: {fileID: 350921517}
   oscNote: /note
+  oscState: /state
   keyWhite: {fileID: 2100000, guid: cf62ddc4f30256d41b69d3bd1f3b88db, type: 2}
   keyBlack: {fileID: 2100000, guid: 6c262487d0249294abf958e226df751e, type: 2}
   keyPress: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
