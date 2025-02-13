@@ -84,7 +84,6 @@ public class Note : MonoBehaviour
     {
         int pitch = input.GetInt(0);
         int velocity = input.GetInt(1);
-        Debug.Log($"Pitch {pitch}, Velocity {velocity}");
         if (velocity != 0)
         {
             keys[pitch].GetComponent<Renderer>().material = keyPress;
