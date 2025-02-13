@@ -9,6 +9,39 @@ public class Note : MonoBehaviour
 
     // Variable
     private Dictionary<int, Transform> keys = new Dictionary<int, Transform>();
+    Dictionary<string, int> keyPitchDict = new Dictionary<string, int>
+    {
+        { "C", 0},
+        { "C#", 1},
+        { "D", 2},
+        { "D#", 3},
+        { "E", 4},
+        { "F", 5},
+        { "F#", 6},
+        { "G", 7},
+        { "G#", 8},
+        { "A", 9},
+        { "A#", 10},
+        { "B", 11}
+    };
+    Dictionary<int, string> pitchKeyDict = new Dictionary<int, string>
+    {
+        { 0,  "C"},
+        { 1,  "C#"},
+        { 2,  "D"},
+        { 3,  "D#"},
+        { 4,  "E"},
+        { 5,  "F"},
+        { 6,  "F#"},
+        { 7,  "G"},
+        { 8,  "G#"},
+        { 9,  "A"},
+        { 10,  "A#"},
+        { 11,  "B"}
+    };
+    public Material keyWhite;
+    public Material keyBlack;
+    public Material keyPress;
 
     void Start()
     {
@@ -22,25 +55,21 @@ public class Note : MonoBehaviour
     // Given an octave and key, return the pitch.
     private int keyToPitch(string octave, string key)
     {
-        Dictionary<string, int> dict = new Dictionary<string, int>
-        {
-            { "C", 0},
-            { "C#", 1},
-            { "D", 2},
-            { "D#", 3},
-            { "E", 4},
-            { "F", 5},
-            { "F#", 6},
-            { "G", 7},
-            { "G#", 8},
-            { "A", 9},
-            { "A#", 10},
-            { "B", 11}
-        };
-
         int pitch_octave = int.Parse(octave.Split('_')[1]);
-        int pitch_key = dict[key.Split('_')[1]];
+        int pitch_key = keyPitchDict[key.Split('_')[1]];
         return (pitch_octave + 1) * 12 + pitch_key;
+    }
+
+    // Given a pitch, return the key.
+    private string pitchToKey(int pitch)
+    {
+        return pitchKeyDict[pitch % 12];
+    }
+
+    // Given a key, return true if white, false otherwise.
+    private bool isKeyWhite(string key)
+    {
+        return key[^1] != '#';
     }
 
     private void assignKeys()
@@ -56,5 +85,13 @@ public class Note : MonoBehaviour
         int pitch = input.GetInt(0);
         int velocity = input.GetInt(1);
         Debug.Log($"Pitch {pitch}, Velocity {velocity}");
+        if (velocity != 0)
+        {
+            keys[pitch].GetComponent<Renderer>().material = keyPress;
+        }
+        else
+        {
+            keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
+        }
     }
 }
