@@ -10,7 +10,8 @@ public class Note : MonoBehaviour
 
     // Variable
     private Dictionary<int, Transform> keys = new Dictionary<int, Transform>();
-    Dictionary<string, int> keyPitchDict = new Dictionary<string, int>
+    private Dictionary<int, GameObject> keyEffects = new Dictionary<int, GameObject>();
+    private Dictionary<string, int> keyPitchDict = new Dictionary<string, int>
     {
         { "C", 0},
         { "C#", 1},
@@ -25,7 +26,7 @@ public class Note : MonoBehaviour
         { "A#", 10},
         { "B", 11}
     };
-    Dictionary<int, string> pitchKeyDict = new Dictionary<int, string>
+    private Dictionary<int, string> pitchKeyDict = new Dictionary<int, string>
     {
         { 0,  "C"},
         { 1,  "C#"},
@@ -43,6 +44,7 @@ public class Note : MonoBehaviour
     public Material keyWhite;
     public Material keyBlack;
     public Material keyPress;
+    private float effectSpeed = 0.01f;
 
     void Start()
     {
@@ -55,6 +57,25 @@ public class Note : MonoBehaviour
 
         // Variable
         assignKeys();
+    }
+
+    void systemEffect()
+    {
+        foreach (GameObject effect in keyEffects.Values)
+        {
+            Vector3 scale = effect.transform.localScale;
+            scale.y += effectSpeed;
+            effect.transform.localScale = scale;
+
+            Vector3 position = effect.transform.position;
+            position.z += effectSpeed / 2;
+            effect.transform.position = position;
+        }
+    }
+
+    void Update()
+    {
+        systemEffect();
     }
 
     // Given an octave and key, return the pitch.
@@ -89,13 +110,24 @@ public class Note : MonoBehaviour
     // Trigger note-on
     private void noteOn(int pitch)
     {
+        // Key Press
         keys[pitch].GetComponent<Renderer>().material = keyPress;
+
+        // Create Effect
+        GameObject effect = Instantiate(keys[pitch].gameObject, keys[pitch].position, keys[pitch].rotation);
+        effect.transform.localScale = keys[pitch].localScale;
+        keyEffects[pitch] = effect;
     }
 
     // Trigger note-off
     private void noteOff(int pitch)
     {
+        // Key Press
         keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
+
+        // Delete Effect
+        Destroy(keyEffects[pitch]);
+        keyEffects.Remove(pitch);
     }
 
     private void setNote(OscMessage input)
