@@ -44,7 +44,9 @@ public class Note : MonoBehaviour
     public Material keyWhite;
     public Material keyBlack;
     public Material keyPress;
+    public Material keyEffect;
     private float effectSpeed = 0.01f;
+    private float keyDepth = 0.5f;
 
     void Start()
     {
@@ -110,24 +112,35 @@ public class Note : MonoBehaviour
     // Trigger note-on
     private void noteOn(int pitch)
     {
-        // Key Press
+        // Material
         keys[pitch].GetComponent<Renderer>().material = keyPress;
 
         // Create Effect
         GameObject effect = Instantiate(keys[pitch].gameObject, keys[pitch].position, keys[pitch].rotation);
-        effect.transform.localScale = keys[pitch].localScale;
         keyEffects[pitch] = effect;
+        effect.transform.localScale = keys[pitch].localScale;
+        effect.GetComponent<Renderer>().material = keyEffect;
+
+        // Position
+        Vector3 position = keys[pitch].transform.position;
+        position.y -= keyDepth;
+        keys[pitch].transform.position = position;
     }
 
     // Trigger note-off
     private void noteOff(int pitch)
     {
-        // Key Press
+        // Material
         keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
 
         // Delete Effect
         Destroy(keyEffects[pitch]);
         keyEffects.Remove(pitch);
+
+        // Position
+        Vector3 position = keys[pitch].transform.position;
+        position.y += keyDepth;
+        keys[pitch].transform.position = position;
     }
 
     private void setNote(OscMessage input)
