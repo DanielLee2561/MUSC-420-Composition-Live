@@ -109,6 +109,25 @@ public class Note : MonoBehaviour
                 keys[keyToPitch(octave.name, key.name)] = key;
     }
 
+    // Create effect
+    private void createEffect(int pitch)
+    {
+        GameObject effect = Instantiate(keys[pitch].gameObject, keys[pitch].position, keys[pitch].rotation);
+        keyEffects[pitch] = effect;
+        effect.transform.localScale = keys[pitch].localScale;
+        effect.GetComponent<Renderer>().material = keyEffect;
+        Vector3 position = effect.transform.position;
+        position.z += effect.transform.localScale.y;
+        effect.transform.position = position;
+    }
+
+    // Remove effect
+    private void removeEffect(int pitch)
+    {
+        Destroy(keyEffects[pitch]);
+        keyEffects.Remove(pitch);
+    }
+
     // Trigger note-on
     private void noteOn(int pitch)
     {
@@ -116,10 +135,7 @@ public class Note : MonoBehaviour
         keys[pitch].GetComponent<Renderer>().material = keyPress;
 
         // Create Effect
-        GameObject effect = Instantiate(keys[pitch].gameObject, keys[pitch].position, keys[pitch].rotation);
-        keyEffects[pitch] = effect;
-        effect.transform.localScale = keys[pitch].localScale;
-        effect.GetComponent<Renderer>().material = keyEffect;
+        createEffect(pitch);
 
         // Position
         Vector3 position = keys[pitch].transform.position;
@@ -134,8 +150,7 @@ public class Note : MonoBehaviour
         keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
 
         // Delete Effect
-        Destroy(keyEffects[pitch]);
-        keyEffects.Remove(pitch);
+        removeEffect(pitch);
 
         // Position
         Vector3 position = keys[pitch].transform.position;
