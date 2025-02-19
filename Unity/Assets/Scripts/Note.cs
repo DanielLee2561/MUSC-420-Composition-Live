@@ -112,12 +112,20 @@ public class Note : MonoBehaviour
     // Create effect
     private void createEffect(int pitch)
     {
-        GameObject effect = Instantiate(keys[pitch].gameObject, keys[pitch].position, keys[pitch].rotation);
+        // Initialize
+        Transform key = keys[pitch];
+        GameObject effect = Instantiate(key.gameObject, key.position, key.rotation);
         keyEffects[pitch] = effect;
-        effect.transform.localScale = keys[pitch].localScale;
         effect.GetComponent<Renderer>().material = keyEffect;
-        Vector3 position = effect.transform.position;
-        position.z += effect.transform.localScale.y;
+
+        // Scale
+        Vector3 scale = key.localScale;
+        scale.y = 0;
+        effect.transform.localScale = scale;
+        
+        // Position
+        Vector3 position = key.transform.position;
+        position.z += key.transform.localScale.y / 2;
         effect.transform.position = position;
     }
 
