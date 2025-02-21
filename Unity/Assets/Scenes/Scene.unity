@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 350921516}
   - component: {fileID: 350921517}
   - component: {fileID: 350921518}
+  - component: {fileID: 350921519}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -292,6 +293,21 @@ MonoBehaviour:
   keyBlack: {fileID: 2100000, guid: 6c262487d0249294abf958e226df751e, type: 2}
   keyPress: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
   keyEffect: {fileID: 2100000, guid: 58ba464ff13e3c04a9bc82cc2cfe7433, type: 2}
+--- !u!114 &350921519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350921512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf463221b618f74b80411a73b0c58ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  osc: {fileID: 350921517}
+  oscState: /powerGlobal
+  powerGlobal: {fileID: 1453402513}
 --- !u!1 &1453402513
 GameObject:
   m_ObjectHideFlags: 0
