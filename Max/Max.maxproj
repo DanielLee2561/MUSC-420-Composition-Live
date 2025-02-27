@@ -2,7 +2,7 @@
 	"name" : "Max",
 	"version" : 1,
 	"creationdate" : 3820455764,
-	"modificationdate" : 3823479555,
+	"modificationdate" : 3823479731,
 	"viewrect" : [ 107.0, 130.0, 300.0, 448.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -51,11 +51,6 @@
 			}
 ,
 			"Composition Studio.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"OSC.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
