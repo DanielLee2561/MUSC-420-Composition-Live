@@ -4,9 +4,6 @@ public class KeyEffect : MonoBehaviour
 {
     // Variable
     private float SPEED = 0.02f;
-    private static int BOUNDARY_START;
-    private static int BOUNDARY_END = 20;
-    private static float DESTROY_TIME = 1f;
 
     // Implementation
     private bool detatch = false;
@@ -31,15 +28,15 @@ public class KeyEffect : MonoBehaviour
 
         // Material
         gameObject.GetComponent<Renderer>().material = material;
+
+        // Collision
+        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
+        rb.useGravity = false;
+        gameObject.AddComponent<BoxCollider>();
     }
 
     void Update()
     {
-        if (detatch && gameObject.transform.position.z > BOUNDARY_END)
-        {
-            Destroy(gameObject, DESTROY_TIME);
-        }
-
         if (!detatch)
         {
             Vector3 scale = gameObject.transform.localScale;
