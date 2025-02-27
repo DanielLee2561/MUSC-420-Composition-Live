@@ -106,20 +106,10 @@ public class Note : MonoBehaviour
         Transform key = keys[pitch];
         GameObject effect = Instantiate(key.gameObject, key.position, key.rotation);
         keyEffects[pitch] = effect;
-        effect.GetComponent<Renderer>().material = keyEffect;
-
-        // Scale
-        Vector3 scale = key.localScale;
-        scale.y = 0;
-        effect.transform.localScale = scale;
-        
-        // Position
-        Vector3 position = key.transform.position;
-        position.z += key.transform.localScale.y / 2;
-        effect.transform.position = position;
 
         // Script
-        effect.AddComponent<KeyEffect>();
+        KeyEffect script = effect.AddComponent<KeyEffect>();
+        script.initialize(key.localScale, key.transform.position, keyEffect);
     }
 
     // Remove effect
