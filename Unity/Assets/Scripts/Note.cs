@@ -158,7 +158,7 @@ public class Note : MonoBehaviour
         keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
 
         // Delete Effect
-        removeEffect(pitch);
+        if (keyEffects.ContainsKey(pitch)) removeEffect(pitch);
 
         // Position
         Vector3 position = keys[pitch].transform.position;
