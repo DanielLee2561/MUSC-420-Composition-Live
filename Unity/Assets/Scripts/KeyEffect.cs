@@ -28,11 +28,6 @@ public class KeyEffect : MonoBehaviour
 
         // Material
         gameObject.GetComponent<Renderer>().material = material;
-
-        // Collision
-        Rigidbody rb = gameObject.AddComponent<Rigidbody>();
-        rb.useGravity = false;
-        gameObject.AddComponent<BoxCollider>();
     }
 
     void Update()
