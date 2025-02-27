@@ -20,7 +20,6 @@ public class Note : MonoBehaviour
     public Material keyBlack;
     public Material keyPress;
     public Material keyEffect;
-    private float effectSpeed = 0.05f;
     private float keyDepth = 0.5f;
 
     // Constant
@@ -66,25 +65,6 @@ public class Note : MonoBehaviour
 
         // Variable
         assignKeys();
-    }
-
-    void systemEffect()
-    {
-        foreach (GameObject effect in keyEffects.Values)
-        {
-            Vector3 scale = effect.transform.localScale;
-            scale.y += effectSpeed;
-            effect.transform.localScale = scale;
-
-            Vector3 position = effect.transform.position;
-            position.z += effectSpeed / 2;
-            effect.transform.position = position;
-        }
-    }
-
-    void Update()
-    {
-        systemEffect();
     }
 
     // Given an octave and key, return the pitch.
@@ -137,12 +117,14 @@ public class Note : MonoBehaviour
         Vector3 position = key.transform.position;
         position.z += key.transform.localScale.y / 2;
         effect.transform.position = position;
+
+        // Script
+        effect.AddComponent<KeyEffect>();
     }
 
     // Remove effect
     private void removeEffect(int pitch)
     {
-        Destroy(keyEffects[pitch]);
         keyEffects.Remove(pitch);
     }
 
