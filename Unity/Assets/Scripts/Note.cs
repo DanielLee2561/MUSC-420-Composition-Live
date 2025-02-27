@@ -109,12 +109,14 @@ public class Note : MonoBehaviour
 
         // Script
         KeyEffect script = effect.AddComponent<KeyEffect>();
-        script.initialize(key.localScale, key.transform.position, keyEffect);
+        script.initialize(key.name, key.localScale, key.transform.position, keyEffect);
     }
 
     // Remove effect
     private void removeEffect(int pitch)
     {
+        KeyEffect script = keyEffects[pitch].GetComponent<KeyEffect>();
+        script.triggerDetatch();
         keyEffects.Remove(pitch);
     }
 
