@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Note : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class Note : MonoBehaviour
     private Dictionary<int, bool> keyStates = new Dictionary<int, bool>();
 
     // Variable
+    public Volume globalVolume;
     public Material keyWhite;
     public Material keyBlack;
     public Material keyPress;
@@ -205,10 +207,15 @@ public class Note : MonoBehaviour
         int state = input.GetInt(0);
         if (state == 0)
         {
+            globalVolume.enabled = false;
             foreach (int pitch in keys.Keys)
             {
                 noteOff(pitch);
             }
+        }
+        else
+        {
+            globalVolume.enabled = true;
         }
     }
 }
