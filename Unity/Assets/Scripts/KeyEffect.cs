@@ -5,7 +5,8 @@ public class KeyEffect : MonoBehaviour
     // Variable
     private float SPEED = 0.02f;
     private static int BOUNDARY_START;
-    private static int BOUNDARY_END;
+    private static int BOUNDARY_END = 20;
+    private static float DESTROY_TIME = 1f;
 
     // Implementation
     private bool detatch = false;
@@ -36,6 +37,11 @@ public class KeyEffect : MonoBehaviour
     {
         GameObject effect = this.gameObject;
 
+        if (detatch && effect.transform.position.z > BOUNDARY_END)
+        {
+            Destroy(effect, DESTROY_TIME);
+        }
+
         if (!detatch)
         {
             Vector3 scale = effect.transform.localScale;
@@ -47,6 +53,4 @@ public class KeyEffect : MonoBehaviour
         position.z += (!detatch) ? SPEED / 2 : SPEED;
         effect.transform.position = position;
     }
-
-    // Destroy(keyEffects[pitch]);
 }
