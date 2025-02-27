@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1373.0, 791.0 ],
+		"rect" : [ 1472.0, 74.0, 1856.0, 974.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,6 +41,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 518.0, 334.0, 70.0, 22.0 ],
+					"text" : "s inputOSC"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-11",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -58,7 +69,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 518.0, 364.0, 54.0, 20.0 ],
+					"patching_rect" : [ 518.0, 358.0, 54.0, 20.0 ],
 					"text" : "Unity"
 				}
 
@@ -84,19 +95,6 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 518.0, 310.0, 83.0, 22.0 ],
 					"text" : "prepend /note"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-25",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 518.0, 334.0, 135.0, 22.0 ],
-					"text" : "udpsend localhost 8000"
 				}
 
 			}
@@ -287,7 +285,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 224.0, 364.0, 45.0, 20.0 ],
+					"patching_rect" : [ 224.0, 366.0, 45.0, 20.0 ],
 					"text" : "Signal"
 				}
 
@@ -300,7 +298,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 224.0, 332.0, 30.0, 30.0 ]
+					"patching_rect" : [ 224.0, 334.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -440,7 +438,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -532,7 +530,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
+					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-24", 0 ]
 				}
 
