@@ -19,38 +19,36 @@ public class KeyEffect : MonoBehaviour
     public void initialize(string name, Vector3 scale, Vector3 position, Material material)
     {
         // Name
-        this.gameObject.name = name + " Effect";
+        gameObject.name = name + " Effect";
 
         // Position
         position.z += scale.y / 2;
-        this.transform.position = position;
+        transform.position = position;
 
         // Scale
         scale.y = 0;
-        this.transform.localScale = scale;
+        transform.localScale = scale;
 
         // Material
-        this.gameObject.GetComponent<Renderer>().material = material;
+        gameObject.GetComponent<Renderer>().material = material;
     }
 
     void Update()
     {
-        GameObject effect = this.gameObject;
-
-        if (detatch && effect.transform.position.z > BOUNDARY_END)
+        if (detatch && gameObject.transform.position.z > BOUNDARY_END)
         {
-            Destroy(effect, DESTROY_TIME);
+            Destroy(gameObject, DESTROY_TIME);
         }
 
         if (!detatch)
         {
-            Vector3 scale = effect.transform.localScale;
+            Vector3 scale = gameObject.transform.localScale;
             scale.y += SPEED;
-            effect.transform.localScale = scale;
+            gameObject.transform.localScale = scale;
         }
 
-        Vector3 position = effect.transform.position;
+        Vector3 position = gameObject.transform.position;
         position.z += (!detatch) ? SPEED / 2 : SPEED;
-        effect.transform.position = position;
+        gameObject.transform.position = position;
     }
 }
