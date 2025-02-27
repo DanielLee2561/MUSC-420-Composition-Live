@@ -20,7 +20,7 @@ public class Note : MonoBehaviour
     public Material keyBlack;
     public Material keyPress;
     public Material keyEffect;
-    private float effectSpeed = 0.01f;
+    private float effectSpeed = 0.05f;
     private float keyDepth = 0.5f;
 
     // Constant
