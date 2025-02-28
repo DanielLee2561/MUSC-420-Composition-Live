@@ -139,7 +139,10 @@ public class Note : MonoBehaviour
     // Remove particle object
     private void removeParticleObject(int pitch)
     {;
-        Destroy(keyParticleObjects[pitch]);
+        GameObject obj = keyParticleObjects[pitch];
+        ParticleSystem particleSystem = obj.GetComponent<ParticleSystem>();
+        particleSystem.Stop();
+        Destroy(obj, particleSystem.main.startLifetime.constant);
         keyParticleObjects.Remove(pitch);
     }
 
