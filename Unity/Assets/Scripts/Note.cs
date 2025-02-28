@@ -13,6 +13,7 @@ public class Note : MonoBehaviour
     private Dictionary<int, Transform> keys = new Dictionary<int, Transform>();
     private Dictionary<int, GameObject> keyEffects = new Dictionary<int, GameObject>();
     private Dictionary<int, bool> keyStates = new Dictionary<int, bool>();
+    private Dictionary<int, GameObject> keyParticleObjects = new Dictionary<int, GameObject>();
 
     // Variable
     public Volume globalVolume;
@@ -20,6 +21,7 @@ public class Note : MonoBehaviour
     public Material keyBlack;
     public Material keyPress;
     public Material keyEffect;
+    public GameObject particleObject;
     private float keyDepth = 0.5f;
 
     // Constant
@@ -120,6 +122,19 @@ public class Note : MonoBehaviour
         keyEffects.Remove(pitch);
     }
 
+    // Create particle object
+    private void createParticleObject(int pitch)
+    {
+        keyParticleObjects[pitch] = Instantiate(particleObject);
+    }
+
+    // Remove particle object
+    private void removeParticleObject(int pitch)
+    {;
+        Destroy(keyParticleObjects[pitch]);
+        keyParticleObjects.Remove(pitch);
+    }
+
     // Trigger note-on
     private void noteOn(int pitch)
     {
@@ -138,6 +153,9 @@ public class Note : MonoBehaviour
             Vector3 position = keys[pitch].transform.position;
             position.y -= keyDepth;
             keys[pitch].transform.position = position;
+
+            // Create Particle Object
+            createParticleObject(pitch);
         }
     }
 
@@ -159,6 +177,9 @@ public class Note : MonoBehaviour
             Vector3 position = keys[pitch].transform.position;
             position.y += keyDepth;
             keys[pitch].transform.position = position;
+
+            // Delete Particle Object
+            if (keyParticleObjects.ContainsKey(pitch)) removeParticleObject(pitch);
         }
     }
 
