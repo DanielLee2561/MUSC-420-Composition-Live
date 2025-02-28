@@ -125,7 +125,15 @@ public class Note : MonoBehaviour
     // Create particle object
     private void createParticleObject(int pitch)
     {
-        keyParticleObjects[pitch] = Instantiate(particleObject);
+        // Initialize
+        GameObject obj = Instantiate(particleObject);
+        keyParticleObjects[pitch] = obj;
+
+        // Position
+        Vector3 scale = keys[pitch].localScale;
+        Vector3 position = keys[pitch].position;
+        position.z += scale.y / 2;
+        obj.transform.position = position;
     }
 
     // Remove particle object
