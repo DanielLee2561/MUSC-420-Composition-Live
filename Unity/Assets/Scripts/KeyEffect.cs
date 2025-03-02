@@ -3,7 +3,7 @@ using UnityEngine;
 public class KeyEffect : MonoBehaviour
 {
     // Variable
-    private float SPEED = 0.02f;
+    private float SPEED = 0.05f;
 
     // Implementation
     private bool detatch = false;
