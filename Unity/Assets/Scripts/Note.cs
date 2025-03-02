@@ -167,7 +167,7 @@ public class Note : MonoBehaviour
             keys[pitch].GetComponent<Renderer>().material = keyPress;
 
             // Create Effect
-            createEffect(pitch);
+            //createEffect(pitch);
 
             // State
             keyStates[pitch] = true;
@@ -191,7 +191,7 @@ public class Note : MonoBehaviour
             keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
 
             // Delete Effect
-            if (keyEffects.ContainsKey(pitch)) removeEffect(pitch);
+            //if (keyEffects.ContainsKey(pitch)) removeEffect(pitch);
 
             // State
             keyStates[pitch] = false;
