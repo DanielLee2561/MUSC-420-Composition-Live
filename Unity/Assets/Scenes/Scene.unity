@@ -294,7 +294,7 @@ MonoBehaviour:
   keyBlack: {fileID: 2100000, guid: 6c262487d0249294abf958e226df751e, type: 2}
   keyPress: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
   keyEffect: {fileID: 2100000, guid: 58ba464ff13e3c04a9bc82cc2cfe7433, type: 2}
-  particleObject: {fileID: 8373776090936359389, guid: c2adea11ebfc74e4e84cdbb26c01da97, type: 3}
+  particleObject: {fileID: 6195392193465969134, guid: c578f122740c6504ba2100e9a643abe6, type: 3}
 --- !u!114 &350921519
 MonoBehaviour:
   m_ObjectHideFlags: 0

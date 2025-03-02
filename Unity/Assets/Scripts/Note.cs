@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.VFX;
 
 public class Note : MonoBehaviour
 {
@@ -140,9 +141,20 @@ public class Note : MonoBehaviour
     private void removeParticleObject(int pitch)
     {;
         GameObject obj = keyParticleObjects[pitch];
-        ParticleSystem particleSystem = obj.GetComponent<ParticleSystem>();
-        particleSystem.Stop();
-        Destroy(obj, particleSystem.main.startLifetime.constant);
+
+        if (obj.GetComponent<ParticleSystem>() != null)
+        {
+            ParticleSystem particleSystem = obj.GetComponent<ParticleSystem>();
+            particleSystem.Stop();
+            Destroy(obj, particleSystem.main.startLifetime.constant);
+        }
+        else
+        {
+            VisualEffect vfx = obj.GetComponent<VisualEffect>();
+            vfx.Stop();
+            Destroy(obj, vfx.GetFloat("Life_Max"));
+        }
+
         keyParticleObjects.Remove(pitch);
     }
 
