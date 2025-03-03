@@ -15,6 +15,7 @@ public class Note : MonoBehaviour
     private Dictionary<int, GameObject> keyEffects = new Dictionary<int, GameObject>();
     private Dictionary<int, bool> keyStates = new Dictionary<int, bool>();
     private Dictionary<int, GameObject> keyParticleObjects = new Dictionary<int, GameObject>();
+    private Dictionary<int, GameObject> keyLightObjects = new Dictionary<int, GameObject>();
 
     // Variable
     public Volume globalVolume;
@@ -23,6 +24,7 @@ public class Note : MonoBehaviour
     public Material keyPress;
     public Material keyEffect;
     public GameObject particleObject;
+    public GameObject lightObject;
     private float keyDepth = 0.5f;
 
     // Constant
@@ -123,12 +125,12 @@ public class Note : MonoBehaviour
         keyEffects.Remove(pitch);
     }
 
-    // Create particle object
-    private void createParticleObject(int pitch)
+    // Create VFX
+    private void createVFX(Dictionary<int, GameObject> dict, int pitch, GameObject vfx)
     {
         // Initialize
-        GameObject obj = Instantiate(particleObject);
-        keyParticleObjects[pitch] = obj;
+        GameObject obj = Instantiate(vfx);
+        dict[pitch] = obj;
 
         // Position
         Vector3 scale = keys[pitch].localScale;
@@ -137,25 +139,19 @@ public class Note : MonoBehaviour
         obj.transform.position = position;
     }
 
-    // Remove particle object
-    private void removeParticleObject(int pitch)
-    {;
-        GameObject obj = keyParticleObjects[pitch];
+    // Remove VFX
+    private void removeVFX(Dictionary<int, GameObject> dict, int pitch)
+    {
+        if (dict.ContainsKey(pitch))
+        {
+            GameObject obj = dict[pitch];
 
-        if (obj.GetComponent<ParticleSystem>() != null)
-        {
-            ParticleSystem particleSystem = obj.GetComponent<ParticleSystem>();
-            particleSystem.Stop();
-            Destroy(obj, particleSystem.main.startLifetime.constant);
-        }
-        else
-        {
             VisualEffect vfx = obj.GetComponent<VisualEffect>();
             vfx.Stop();
             Destroy(obj, vfx.GetFloat("Life_Max"));
-        }
 
-        keyParticleObjects.Remove(pitch);
+            dict.Remove(pitch);
+        }
     }
 
     // Trigger note-on
@@ -177,8 +173,9 @@ public class Note : MonoBehaviour
             position.y -= keyDepth;
             keys[pitch].transform.position = position;
 
-            // Create Particle Object
-            createParticleObject(pitch);
+            // Create VFX
+            createVFX(keyParticleObjects, pitch, particleObject);
+            createVFX(keyLightObjects, pitch, lightObject);
         }
     }
 
@@ -201,8 +198,9 @@ public class Note : MonoBehaviour
             position.y += keyDepth;
             keys[pitch].transform.position = position;
 
-            // Delete Particle Object
-            if (keyParticleObjects.ContainsKey(pitch)) removeParticleObject(pitch);
+            // Delete VFX
+            removeVFX(keyParticleObjects, pitch);
+            removeVFX(keyLightObjects, pitch);
         }
     }
 
