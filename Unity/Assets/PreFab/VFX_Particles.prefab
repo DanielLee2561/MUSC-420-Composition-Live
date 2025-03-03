@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5554407670228366093}
   - component: {fileID: 2447557575689335706}
   m_Layer: 0
-  m_Name: Visual Effect
+  m_Name: VFX_Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
