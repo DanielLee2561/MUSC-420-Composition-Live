@@ -103,7 +103,10 @@ VisualEffect:
     m_NamedObject:
       m_Array: []
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 1
+        m_Name: Force_Toggle
+        m_Overridden: 1
 --- !u!73398921 &2447557575689335706
 VFXRenderer:
   serializedVersion: 1
