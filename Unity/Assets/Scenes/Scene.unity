@@ -209,7 +209,7 @@ Transform:
   m_GameObject: {fileID: 350921512}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1, y: 40, z: 15}
+  m_LocalPosition: {x: 1, y: 50, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -294,8 +294,8 @@ MonoBehaviour:
   keyBlack: {fileID: 2100000, guid: 6c262487d0249294abf958e226df751e, type: 2}
   keyPress: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
   keyEffect: {fileID: 2100000, guid: 58ba464ff13e3c04a9bc82cc2cfe7433, type: 2}
-  particleObject: {fileID: 6195392193465969134, guid: c578f122740c6504ba2100e9a643abe6, type: 3}
-  lightObject: {fileID: 6195392193465969134, guid: 31c9721f1cb98b447b10c4b5166076f5, type: 3}
+  particleObject: {fileID: 6195392193465969134, guid: 31c9721f1cb98b447b10c4b5166076f5, type: 3}
+  lightObject: {fileID: 6195392193465969134, guid: 03d7880e7249bb9429981d6d36ea478e, type: 3}
 --- !u!114 &350921519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ Transform:
   m_GameObject: {fileID: 611530047}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 40}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 100, y: 10, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
