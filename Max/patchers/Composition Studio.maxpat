@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 1373.0, 791.0 ],
+		"rect" : [ 34.0, 76.0, 973.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -95,7 +95,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -354,7 +354,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -706,7 +706,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -981,7 +981,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 102.0, 1373.0, 765.0 ],
+						"rect" : [ 34.0, 102.0, 973.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1013,6 +1013,35 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"fontface" : 1,
+									"id" : "obj-7",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 165.0, 97.0, 60.0, 20.0 ],
+									"text" : "Trigger"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
+									"blinkcolor" : [ 0.501960784313725, 0.501960784313725, 0.501960784313725, 1.0 ],
+									"id" : "obj-5",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"outlinecolor" : [ 0.2, 0.2, 0.2, 1.0 ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 165.0, 25.0, 24.0, 24.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontface" : 1,
 									"fontsize" : 24.0,
 									"id" : "obj-8",
 									"maxclass" : "comment",
@@ -1020,7 +1049,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 160.0, 598.0, 213.0, 34.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 20.0, 20.0, 180.0, 34.0 ],
+									"presentation_rect" : [ 54.0, 20.0, 146.0, 34.0 ],
 									"text" : "Settings",
 									"textjustification" : 1
 								}
@@ -1097,7 +1126,7 @@
 									"bgfillcolor_proportion" : 0.5,
 									"bgfillcolor_type" : "gradient",
 									"id" : "obj-20",
-									"items" : "<empty>",
+									"items" : "Keystation Mini 32 MK3",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1146,6 +1175,14 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 0 ],
 									"source" : [ "obj-20", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-57", 0 ],
+									"midpoints" : [ 174.5, 59.0, 155.0, 59.0, 155.0, 46.0, 39.5, 46.0 ],
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -1262,12 +1299,12 @@
 			"obj-15::obj-13::obj-23" : [ "live.dial[19]", "Panning", 0 ],
 			"obj-15::obj-13::obj-25" : [ "live.gain~[9]", "Input", 0 ],
 			"obj-15::obj-13::obj-27" : [ "live.dial[18]", "Volume", 0 ],
-			"obj-15::obj-1::obj-33::obj-33" : [ "vst~[7]", "vst~", 0 ],
+			"obj-15::obj-1::obj-33::obj-14" : [ "vst~[4]", "vst~[1]", 0 ],
 			"obj-15::obj-2::obj-22" : [ "live.gain~[15]", "Output", 0 ],
 			"obj-15::obj-2::obj-23" : [ "live.dial[16]", "Panning", 0 ],
 			"obj-15::obj-2::obj-25" : [ "live.gain~[16]", "Input", 0 ],
 			"obj-15::obj-2::obj-27" : [ "live.dial[15]", "Volume", 0 ],
-			"obj-4::obj-1::obj-72::obj-33" : [ "vst~", "vst~", 0 ],
+			"obj-4::obj-1::obj-72::obj-14" : [ "vst~[5]", "vst~[1]", 0 ],
 			"obj-4::obj-2::obj-22" : [ "live.gain~[2]", "Output", 0 ],
 			"obj-4::obj-2::obj-23" : [ "live.dial", "Panning", 0 ],
 			"obj-4::obj-2::obj-25" : [ "live.gain~[3]", "Input", 0 ],
@@ -1276,13 +1313,13 @@
 			"obj-7::obj-17::obj-23" : [ "live.dial[4]", "Panning", 0 ],
 			"obj-7::obj-17::obj-25" : [ "live.gain~[7]", "Input", 0 ],
 			"obj-7::obj-17::obj-27" : [ "live.dial[12]", "Volume", 0 ],
-			"obj-7::obj-18::obj-12::obj-33" : [ "vst~[2]", "vst~", 0 ],
-			"obj-7::obj-1::obj-12::obj-33" : [ "vst~[1]", "vst~", 0 ],
+			"obj-7::obj-18::obj-12::obj-14" : [ "vst~[2]", "vst~[1]", 0 ],
+			"obj-7::obj-1::obj-12::obj-14" : [ "vst~[1]", "vst~[1]", 0 ],
 			"obj-7::obj-20::obj-22" : [ "live.gain~[8]", "Output", 0 ],
 			"obj-7::obj-20::obj-23" : [ "live.dial[14]", "Panning", 0 ],
 			"obj-7::obj-20::obj-25" : [ "live.gain~[14]", "Input", 0 ],
 			"obj-7::obj-20::obj-27" : [ "live.dial[13]", "Volume", 0 ],
-			"obj-7::obj-21::obj-12::obj-33" : [ "vst~[3]", "vst~", 0 ],
+			"obj-7::obj-21::obj-12::obj-14" : [ "vst~[3]", "vst~[1]", 0 ],
 			"obj-7::obj-2::obj-22" : [ "live.gain~[4]", "Output", 0 ],
 			"obj-7::obj-2::obj-23" : [ "live.dial[2]", "Panning", 0 ],
 			"obj-7::obj-2::obj-25" : [ "live.gain~[5]", "Input", 0 ],
@@ -1378,21 +1415,7 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Kontakt.maxsnap",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Kontakt_20220407.maxsnap",
-				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
-				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
-				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Kontakt_20250127.maxsnap",
+				"name" : "Kontakt 8.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
