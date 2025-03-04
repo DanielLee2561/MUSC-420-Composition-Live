@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5554407670228366093}
   - component: {fileID: 2447557575689335706}
   m_Layer: 0
-  m_Name: VFX_Particles
+  m_Name: VFX_Particles_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,14 +84,14 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: 23.968628, y: 23.968628, z: 6.0235295, w: 0}
+      - m_Value: {x: 5.9921575, y: 5.9921575, z: 23.96863, w: 0}
         m_Name: Color
         m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
       m_Array:
-      - m_Value: 150
+      - m_Value: 15
         m_Name: Spawn_Rate
         m_Overridden: 1
     m_Matrix4x4f:

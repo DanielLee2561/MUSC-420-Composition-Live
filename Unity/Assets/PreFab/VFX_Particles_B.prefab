@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5554407670228366093}
   - component: {fileID: 2447557575689335706}
   m_Layer: 0
-  m_Name: VFX_Light
+  m_Name: VFX_Particles_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,13 +51,13 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 1
+      - m_Value: 2
         m_Name: Life_Max
         m_Overridden: 1
       - m_Value: 2.2
         m_Name: Spawn_Width
         m_Overridden: 1
-      - m_Value: 0.5
+      - m_Value: 1
         m_Name: Life_Min
         m_Overridden: 1
       - m_Value: 3
@@ -72,10 +72,10 @@ VisualEffect:
       - m_Value: 1
         m_Name: Velocity_Y_Min
         m_Overridden: 1
-      - m_Value: 2
+      - m_Value: 5
         m_Name: Velocity_Y_Max
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 5
         m_Name: Force
         m_Overridden: 1
     m_Vector2f:
@@ -91,7 +91,7 @@ VisualEffect:
       m_Array: []
     m_Int:
       m_Array:
-      - m_Value: 300
+      - m_Value: 150
         m_Name: Spawn_Rate
         m_Overridden: 1
     m_Matrix4x4f:
