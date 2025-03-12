@@ -14,7 +14,7 @@ public class Key : MonoBehaviour
     public Material materialOff;
 
     // Constant
-    private float depth = 0.5f;
+    private static float depth = 0.5f;
 
     void Start()
     {
