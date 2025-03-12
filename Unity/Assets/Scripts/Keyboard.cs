@@ -206,32 +206,32 @@ public class Note : MonoBehaviour
 
     private void setNote(OscMessage input)
     {
-        int pitch = input.GetInt(0);
-        int velocity = input.GetInt(1);
-        if (velocity != 0)
-        {
-            noteOn(pitch);
-        }
-        else
-        {
-            noteOff(pitch);
-        }
+        //int pitch = input.GetInt(0);
+        //int velocity = input.GetInt(1);
+        //if (velocity != 0)
+        //{
+        //    noteOn(pitch);
+        //}
+        //else
+        //{
+        //    noteOff(pitch);
+        //}
     }
 
     private void setState(OscMessage input)
     {
-        int state = input.GetInt(0);
-        if (state == 0)
-        {
-            globalVolume.enabled = false;
-            foreach (int pitch in keys.Keys)
-            {
-                noteOff(pitch);
-            }
-        }
-        else
-        {
-            globalVolume.enabled = true;
-        }
+        //int state = input.GetInt(0);
+        //if (state == 0)
+        //{
+        //    globalVolume.enabled = false;
+        //    foreach (int pitch in keys.Keys)
+        //    {
+        //        noteOff(pitch);
+        //    }
+        //}
+        //else
+        //{
+        //    globalVolume.enabled = true;
+        //}
     }
 }
