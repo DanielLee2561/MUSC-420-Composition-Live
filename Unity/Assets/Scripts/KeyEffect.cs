@@ -13,7 +13,7 @@ public class KeyEffect : MonoBehaviour
         detatch = true;
     }
 
-    public void initialize(string name, Vector3 scale, Vector3 position, Material material)
+    public void initialize(string name, Vector3 scale, Vector3 position, Quaternion rotation, Material material)
     {
         // Name
         gameObject.name = name + " Effect";
@@ -21,6 +21,9 @@ public class KeyEffect : MonoBehaviour
         // Position
         position.z += scale.y / 2;
         transform.position = position;
+
+        // Rotation
+        transform.rotation = rotation;
 
         // Scale
         scale.y = 0;
@@ -34,13 +37,13 @@ public class KeyEffect : MonoBehaviour
     {
         if (!detatch)
         {
-            Vector3 scale = gameObject.transform.localScale;
+            Vector3 scale = transform.localScale;
             scale.y += SPEED;
-            gameObject.transform.localScale = scale;
+            transform.localScale = scale;
         }
 
-        Vector3 position = gameObject.transform.position;
+        Vector3 position = transform.position;
         position.z += (!detatch) ? SPEED / 2 : SPEED;
-        gameObject.transform.position = position;
+        transform.position = position;
     }
 }

@@ -107,22 +107,22 @@ public class Note : MonoBehaviour
     // Create effect
     private void createEffect(int pitch)
     {
-        // Initialize
-        Transform key = keys[pitch];
-        GameObject effect = Instantiate(key.gameObject, key.position, key.rotation);
-        keyEffects[pitch] = effect;
+        //// Initialize
+        //Transform key = keys[pitch];
+        //GameObject effect = Instantiate(key.gameObject, key.position, key.rotation);
+        //keyEffects[pitch] = effect;
 
-        // Script
-        KeyEffect script = effect.AddComponent<KeyEffect>();
-        script.initialize(key.name, key.localScale, key.transform.position, keyEffect);
+        //// Script
+        //KeyEffect script = effect.AddComponent<KeyEffect>();
+        //script.initialize(key.name, key.localScale, key.transform.position, keyEffect);
     }
 
     // Remove effect
     private void removeEffect(int pitch)
     {
-        KeyEffect script = keyEffects[pitch].GetComponent<KeyEffect>();
-        script.triggerDetatch();
-        keyEffects.Remove(pitch);
+        //KeyEffect script = keyEffects[pitch].GetComponent<KeyEffect>();
+        //script.triggerDetatch();
+        //keyEffects.Remove(pitch);
     }
 
     // Create VFX

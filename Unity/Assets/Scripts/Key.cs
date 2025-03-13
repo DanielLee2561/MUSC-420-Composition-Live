@@ -27,8 +27,8 @@ public class Key : MonoBehaviour
     {
         if (effect == null)
         {
-            effect = Instantiate(gameObject, transform.position, transform.rotation);
-            effect.AddComponent<KeyEffect>().initialize(gameObject.name, transform.localScale, transform.position, materialEffect);
+            effect = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            effect.AddComponent<KeyEffect>().initialize(gameObject.name, transform.localScale, transform.position, transform.rotation, materialEffect);
         }
     }
 
