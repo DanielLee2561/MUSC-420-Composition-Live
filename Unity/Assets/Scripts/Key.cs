@@ -8,10 +8,12 @@ public class Key : MonoBehaviour
 
     // Private
     private bool state;
+    private GameObject effect;
 
     // Public
     public Material materialOn;
     public Material materialOff;
+    public Material materialEffect;
 
     // Constant
     private static float depth = 0.5f;
@@ -19,6 +21,24 @@ public class Key : MonoBehaviour
     void Start()
     {
         if (osc) osc.SetAddressHandler(oscNote, setNote);
+    }
+
+    private void createEffect()
+    {
+        if (effect == null)
+        {
+            effect = Instantiate(gameObject, transform.position, transform.rotation);
+            effect.AddComponent<KeyEffect>().initialize(gameObject.name, transform.localScale, transform.position, materialEffect);
+        }
+    }
+
+    private void removeEffect()
+    {
+        if (effect != null)
+        {
+            effect.GetComponent<KeyEffect>().triggerDetatch();
+            effect = null;
+        }
     }
 
     private void noteOn()
@@ -36,6 +56,9 @@ public class Key : MonoBehaviour
             Vector3 position = transform.position;
             position.y -= depth;
             transform.position = position;
+
+            // Effect
+            createEffect();
         }
     }
 
@@ -54,6 +77,9 @@ public class Key : MonoBehaviour
             Vector3 position = transform.position;
             position.y += depth;
             transform.position = position;
+
+            // Effect
+            removeEffect();
         }
     }
 
