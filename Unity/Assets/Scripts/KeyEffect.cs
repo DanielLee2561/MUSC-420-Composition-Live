@@ -2,32 +2,27 @@ using UnityEngine;
 
 public class KeyEffect : MonoBehaviour
 {
-    // Variable
-    private float SPEED = 0.05f;
-
-    // Implementation
+    // Private
     private bool detatch = false;
+
+    // Constant
+    private static float SPEED = 0.05f;
 
     public void triggerDetatch()
     {
         detatch = true;
     }
 
-    public void initialize(string name, Vector3 scale, Vector3 position, Quaternion rotation, Material material)
+    public void initialize(string name, Vector3 scale, Vector3 position, Material material)
     {
         // Name
         gameObject.name = name + " Effect";
 
         // Position
-        position.z += scale.y / 2;
-        transform.position = position;
-
-        // Rotation
-        transform.rotation = rotation;
+        transform.position = new Vector3(position.x, position.y, position.z + scale.y / 2);
 
         // Scale
-        scale.y = 0;
-        transform.localScale = scale;
+        transform.localScale = new Vector3(scale.x, 0, scale.z);
 
         // Material
         gameObject.GetComponent<Renderer>().material = material;
@@ -35,15 +30,7 @@ public class KeyEffect : MonoBehaviour
 
     void Update()
     {
-        if (!detatch)
-        {
-            Vector3 scale = transform.localScale;
-            scale.y += SPEED;
-            transform.localScale = scale;
-        }
-
-        Vector3 position = transform.position;
-        position.z += (!detatch) ? SPEED / 2 : SPEED;
-        transform.position = position;
+        if (!detatch) transform.localScale += new Vector3(0, 0, SPEED);
+        transform.position += new Vector3(0, 0, !detatch ? SPEED / 2 : SPEED);
     }
 }

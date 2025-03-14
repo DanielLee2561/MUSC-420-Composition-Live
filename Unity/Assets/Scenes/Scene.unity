@@ -759,6 +759,7 @@ MonoBehaviour:
   oscNote: /note
   materialOn: {fileID: 2100000, guid: cf62ddc4f30256d41b69d3bd1f3b88db, type: 2}
   materialOff: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
+  materialEffect: {fileID: 2100000, guid: 58ba464ff13e3c04a9bc82cc2cfe7433, type: 2}
 --- !u!1001 &3988584914478744999
 PrefabInstance:
   m_ObjectHideFlags: 0
