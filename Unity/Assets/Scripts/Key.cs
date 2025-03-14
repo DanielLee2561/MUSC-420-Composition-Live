@@ -11,12 +11,14 @@ public class Key : MonoBehaviour
     private bool state;
     private GameObject effect;
     private GameObject light;
+    private GameObject particle;
 
     // Public
     public Material materialOn;
     public Material materialOff;
     public Material materialEffect;
     public GameObject vfxLight;
+    public GameObject vfxParticle;
 
     // Constant
     private static float depth = 0.5f;
@@ -81,6 +83,7 @@ public class Key : MonoBehaviour
 
             // VFX
             createVFX(ref light, vfxLight);
+            createVFX(ref particle, vfxParticle);
         }
     }
 
@@ -102,6 +105,7 @@ public class Key : MonoBehaviour
 
             // VFX
             removeVFX(ref light);
+            removeVFX(ref particle);
         }
     }
 
