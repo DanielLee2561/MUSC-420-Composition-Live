@@ -49,13 +49,10 @@ public class Key : MonoBehaviour
             state = true;
 
             // Material
-            Renderer renderer = GetComponent<Renderer>();
-            renderer.material = materialOff;
+            GetComponent<Renderer>().material = materialOff;
 
             // Position
-            Vector3 position = transform.position;
-            position.y -= depth;
-            transform.position = position;
+            transform.position -= new Vector3(0, depth, 0);
 
             // Effect
             createEffect();
@@ -70,13 +67,10 @@ public class Key : MonoBehaviour
             state = false;
 
             // Material
-            Renderer renderer = GetComponent<Renderer>();
-            renderer.material = materialOn;
+            GetComponent<Renderer>().material = materialOn;
 
             // Position
-            Vector3 position = transform.position;
-            position.y += depth;
-            transform.position = position;
+            transform.position += new Vector3(0, depth, 0);
 
             // Effect
             removeEffect();
