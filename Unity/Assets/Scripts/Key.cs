@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Key : MonoBehaviour
 {
@@ -9,11 +10,13 @@ public class Key : MonoBehaviour
     // Private
     private bool state;
     private GameObject effect;
+    private GameObject light;
 
     // Public
     public Material materialOn;
     public Material materialOff;
     public Material materialEffect;
+    public GameObject vfxLight;
 
     // Constant
     private static float depth = 0.5f;
@@ -21,6 +24,25 @@ public class Key : MonoBehaviour
     void Start()
     {
         if (osc) osc.SetAddressHandler(oscNote, setNote);
+    }
+
+    private void createVFX(ref GameObject obj, GameObject vfxLight)
+    {
+        if (obj == null)
+        {
+            obj = Instantiate(vfxLight);
+            obj.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + transform.localScale.y / 2);
+        }
+    }
+    private void removeVFX(ref GameObject obj)
+    {
+        if (obj != null)
+        {
+            VisualEffect vfx = obj.GetComponent<VisualEffect>();
+            vfx.Stop();
+            Destroy(obj, vfx.GetFloat("Life_Max"));
+            obj = null;
+        }
     }
 
     private void createEffect()
@@ -56,6 +78,9 @@ public class Key : MonoBehaviour
 
             // Effect
             createEffect();
+
+            // VFX
+            createVFX(ref light, vfxLight);
         }
     }
 
@@ -74,6 +99,9 @@ public class Key : MonoBehaviour
 
             // Effect
             removeEffect();
+
+            // VFX
+            removeVFX(ref light);
         }
     }
 

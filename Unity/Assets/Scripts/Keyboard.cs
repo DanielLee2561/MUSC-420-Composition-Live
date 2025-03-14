@@ -104,27 +104,6 @@ public class Note : MonoBehaviour
             }
     }
 
-    // Create effect
-    private void createEffect(int pitch)
-    {
-        //// Initialize
-        //Transform key = keys[pitch];
-        //GameObject effect = Instantiate(key.gameObject, key.position, key.rotation);
-        //keyEffects[pitch] = effect;
-
-        //// Script
-        //KeyEffect script = effect.AddComponent<KeyEffect>();
-        //script.initialize(key.name, key.localScale, key.transform.position, keyEffect);
-    }
-
-    // Remove effect
-    private void removeEffect(int pitch)
-    {
-        //KeyEffect script = keyEffects[pitch].GetComponent<KeyEffect>();
-        //script.triggerDetatch();
-        //keyEffects.Remove(pitch);
-    }
-
     // Create VFX
     private void createVFX(Dictionary<int, GameObject> dict, int pitch, GameObject vfx)
     {
@@ -162,9 +141,6 @@ public class Note : MonoBehaviour
             // Material
             keys[pitch].GetComponent<Renderer>().material = keyPress;
 
-            // Create Effect
-            createEffect(pitch);
-
             // State
             keyStates[pitch] = true;
 
@@ -186,9 +162,6 @@ public class Note : MonoBehaviour
         {
             // Material
             keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
-
-            // Delete Effect
-            if (keyEffects.ContainsKey(pitch)) removeEffect(pitch);
 
             // State
             keyStates[pitch] = false;
