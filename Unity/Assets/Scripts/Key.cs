@@ -8,7 +8,7 @@ public class Key : MonoBehaviour
     public string oscNote;
 
     // Private
-    private bool state;
+    private bool state = false;
     private GameObject effect;
     private GameObject light;
     private GameObject particle;
@@ -22,11 +22,6 @@ public class Key : MonoBehaviour
 
     // Constant
     private static float depth = 0.5f;
-
-    void Start()
-    {
-        if (osc) osc.SetAddressHandler(oscNote, setNote);
-    }
 
     private void createVFX(ref GameObject obj, GameObject vfxLight)
     {
@@ -65,7 +60,7 @@ public class Key : MonoBehaviour
         }
     }
 
-    private void noteOn()
+    public void noteOn()
     {
         if (!state)
         {
@@ -87,7 +82,7 @@ public class Key : MonoBehaviour
         }
     }
 
-    private void noteOff()
+    public void noteOff()
     {
         if (state)
         {
@@ -106,19 +101,6 @@ public class Key : MonoBehaviour
             // VFX
             removeVFX(ref light);
             removeVFX(ref particle);
-        }
-    }
-
-    private void setNote(OscMessage input)
-    {
-        int velocity = input.GetInt(1);
-        if (velocity != 0)
-        {
-            noteOn();
-        }
-        else
-        {
-            noteOff();
         }
     }
 }

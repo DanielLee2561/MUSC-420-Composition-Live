@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.VFX;
 
 public class Note : MonoBehaviour
 {
@@ -10,22 +9,16 @@ public class Note : MonoBehaviour
     public string oscNote;
     public string oscState;
 
-    // Dictionary
-    private Dictionary<int, Transform> keys = new Dictionary<int, Transform>();
-    private Dictionary<int, GameObject> keyEffects = new Dictionary<int, GameObject>();
-    private Dictionary<int, bool> keyStates = new Dictionary<int, bool>();
-    private Dictionary<int, GameObject> keyParticleObjects = new Dictionary<int, GameObject>();
-    private Dictionary<int, GameObject> keyLightObjects = new Dictionary<int, GameObject>();
+    // Private
+    private Dictionary<int, GameObject> keys = new Dictionary<int, GameObject>();
 
-    // Variable
-    public Volume globalVolume;
+    // Public
     public Material keyWhite;
     public Material keyBlack;
     public Material keyPress;
     public Material keyEffect;
     public GameObject particleObject;
     public GameObject lightObject;
-    private float keyDepth = 0.5f;
 
     // Constant
     private Dictionary<string, int> keyPitchDict = new Dictionary<string, int>
@@ -64,7 +57,7 @@ public class Note : MonoBehaviour
         // OSC
         if (osc)
         {
-            osc.SetAddressHandler(oscNote, setNote);
+            //osc.SetAddressHandler(oscNote, setNote);
             osc.SetAddressHandler(oscState, setState);
         }
 
@@ -80,12 +73,6 @@ public class Note : MonoBehaviour
         return (pitch_octave + 1) * 12 + pitch_key;
     }
 
-    // Given a pitch, return the key.
-    private string pitchToKey(int pitch)
-    {
-        return pitchKeyDict[pitch % 12];
-    }
-
     // Given a key, return true if white, false otherwise.
     private bool isKeyWhite(string key)
     {
@@ -95,86 +82,13 @@ public class Note : MonoBehaviour
     // Initialize keys
     private void assignKeys()
     {
-        GameObject[] octaves = GameObject.FindGameObjectsWithTag("Octave");
-        foreach (GameObject octave in octaves)
+        foreach (Transform octave in transform)
             foreach (Transform key in octave.transform)
             {
-                keys[keyToPitch(octave.name, key.name)] = key;
-                keyStates[keyToPitch(octave.name, key.name)] = false;
+                int pitch = keyToPitch(octave.name, key.name);
+                keys[pitch] = key.gameObject;
+                keys[pitch].AddComponent<Key>();
             }
-    }
-
-    // Create VFX
-    private void createVFX(Dictionary<int, GameObject> dict, int pitch, GameObject vfx)
-    {
-        // Initialize
-        GameObject obj = Instantiate(vfx);
-        dict[pitch] = obj;
-
-        // Position
-        Vector3 scale = keys[pitch].localScale;
-        Vector3 position = keys[pitch].position;
-        position.z += scale.y / 2;
-        obj.transform.position = position;
-    }
-
-    // Remove VFX
-    private void removeVFX(Dictionary<int, GameObject> dict, int pitch)
-    {
-        if (dict.ContainsKey(pitch))
-        {
-            GameObject obj = dict[pitch];
-
-            VisualEffect vfx = obj.GetComponent<VisualEffect>();
-            vfx.Stop();
-            Destroy(obj, vfx.GetFloat("Life_Max"));
-
-            dict.Remove(pitch);
-        }
-    }
-
-    // Trigger note-on
-    private void noteOn(int pitch)
-    {
-        if (!keyStates[pitch])
-        {
-            // Material
-            keys[pitch].GetComponent<Renderer>().material = keyPress;
-
-            // State
-            keyStates[pitch] = true;
-
-            // Position
-            Vector3 position = keys[pitch].transform.position;
-            position.y -= keyDepth;
-            keys[pitch].transform.position = position;
-
-            // Create VFX
-            createVFX(keyParticleObjects, pitch, particleObject);
-            createVFX(keyLightObjects, pitch, lightObject);
-        }
-    }
-
-    // Trigger note-off
-    private void noteOff(int pitch)
-    {
-        if (keyStates[pitch])
-        {
-            // Material
-            keys[pitch].GetComponent<Renderer>().material = (isKeyWhite(pitchToKey(pitch))) ? keyWhite : keyBlack;
-
-            // State
-            keyStates[pitch] = false;
-
-            // Position
-            Vector3 position = keys[pitch].transform.position;
-            position.y += keyDepth;
-            keys[pitch].transform.position = position;
-
-            // Delete VFX
-            removeVFX(keyParticleObjects, pitch);
-            removeVFX(keyLightObjects, pitch);
-        }
     }
 
     private void setNote(OscMessage input)
@@ -191,20 +105,10 @@ public class Note : MonoBehaviour
         //}
     }
 
-    private void setState(OscMessage input)
+    private void setState(OscMessage state)
     {
-        //int state = input.GetInt(0);
-        //if (state == 0)
-        //{
-        //    globalVolume.enabled = false;
-        //    foreach (int pitch in keys.Keys)
-        //    {
-        //        noteOff(pitch);
-        //    }
-        //}
-        //else
-        //{
-        //    globalVolume.enabled = true;
-        //}
+        if (state.GetInt(0) == 0)
+            foreach (GameObject obj in keys.Values)
+                obj.GetComponent<Key>().noteOff();
     }
 }
