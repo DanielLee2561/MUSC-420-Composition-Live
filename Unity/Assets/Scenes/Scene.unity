@@ -667,6 +667,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Keyboard
       objectReference: {fileID: 0}
+    - target: {fileID: 1844121784208913902, guid: 1a96e0ab27e924a42a7dd85f5560c4fc, type: 3}
+      propertyPath: m_Name
+      value: Key_G#
+      objectReference: {fileID: 0}
+    - target: {fileID: 4477517931402197223, guid: 1a96e0ab27e924a42a7dd85f5560c4fc, type: 3}
+      propertyPath: m_Name
+      value: Key_A#
+      objectReference: {fileID: 0}
     - target: {fileID: 6768887770216647799, guid: 1a96e0ab27e924a42a7dd85f5560c4fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
