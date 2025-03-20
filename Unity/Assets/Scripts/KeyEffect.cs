@@ -7,6 +7,7 @@ public class KeyEffect : MonoBehaviour
 
     // Constant
     private static float SPEED = 0.05f;
+    private static float WIDTH = 1.3f;
 
     public void triggerDetatch()
     {
@@ -22,7 +23,7 @@ public class KeyEffect : MonoBehaviour
         transform.position = new Vector3(position.x, position.y, position.z + scale.y / 2);
 
         // Scale
-        transform.localScale = new Vector3(scale.x, 0, scale.z);
+        transform.localScale = new Vector3(WIDTH, 0, scale.z);
 
         // Material
         gameObject.GetComponent<Renderer>().material = material;
