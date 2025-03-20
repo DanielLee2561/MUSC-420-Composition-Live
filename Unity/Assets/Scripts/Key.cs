@@ -3,10 +3,6 @@ using UnityEngine.VFX;
 
 public class Key : MonoBehaviour
 {
-    // OSC
-    public OSC osc;
-    public string oscNote;
-
     // Private
     private bool state = false;
     private GameObject effect;
@@ -14,14 +10,23 @@ public class Key : MonoBehaviour
     private GameObject particle;
 
     // Public
-    public Material materialOn;
     public Material materialOff;
+    public Material materialOn;
     public Material materialEffect;
     public GameObject vfxLight;
     public GameObject vfxParticle;
 
     // Constant
     private static float depth = 0.5f;
+
+    public void initialize(Material materialOff, Material materialOn, Material materialEffect, GameObject vfxLight, GameObject vfxParticle)
+    {
+        this.materialOff = materialOff;
+        this.materialOn = materialOn;
+        this.materialEffect = materialEffect;
+        this.vfxLight = vfxLight;
+        this.vfxParticle = vfxParticle;
+    }
 
     private void createVFX(ref GameObject obj, GameObject vfxLight)
     {
@@ -68,7 +73,7 @@ public class Key : MonoBehaviour
             state = true;
 
             // Material
-            GetComponent<Renderer>().material = materialOff;
+            GetComponent<Renderer>().material = materialOn;
 
             // Position
             transform.position -= new Vector3(0, depth, 0);
@@ -90,7 +95,7 @@ public class Key : MonoBehaviour
             state = false;
 
             // Material
-            GetComponent<Renderer>().material = materialOn;
+            GetComponent<Renderer>().material = materialOff;
 
             // Position
             transform.position += new Vector3(0, depth, 0);

@@ -13,12 +13,12 @@ public class Note : MonoBehaviour
     private Dictionary<int, GameObject> keys = new Dictionary<int, GameObject>();
 
     // Public
-    public Material keyWhite;
-    public Material keyBlack;
-    public Material keyPress;
-    public Material keyEffect;
-    public GameObject particleObject;
-    public GameObject lightObject;
+    public Material matOffWhite;
+    public Material matOffBlack;
+    public Material matOn;
+    public Material matEffect;
+    public GameObject vfxLight;
+    public GameObject vfxParticle;
 
     // Constant
     private Dictionary<string, int> keyPitchDict = new Dictionary<string, int>
@@ -36,28 +36,13 @@ public class Note : MonoBehaviour
         { "A#", 10},
         { "B", 11}
     };
-    private Dictionary<int, string> pitchKeyDict = new Dictionary<int, string>
-    {
-        { 0,  "C"},
-        { 1,  "C#"},
-        { 2,  "D"},
-        { 3,  "D#"},
-        { 4,  "E"},
-        { 5,  "F"},
-        { 6,  "F#"},
-        { 7,  "G"},
-        { 8,  "G#"},
-        { 9,  "A"},
-        { 10,  "A#"},
-        { 11,  "B"}
-    };
 
     void Start()
     {
         // OSC
         if (osc)
         {
-            //osc.SetAddressHandler(oscNote, setNote);
+            osc.SetAddressHandler(oscNote, setNote);
             osc.SetAddressHandler(oscState, setState);
         }
 
@@ -87,22 +72,22 @@ public class Note : MonoBehaviour
             {
                 int pitch = keyToPitch(octave.name, key.name);
                 keys[pitch] = key.gameObject;
-                keys[pitch].AddComponent<Key>();
+                Key script = keys[pitch].AddComponent<Key>();
+                Material matOff = isKeyWhite(key.name) ? matOffWhite : matOffBlack;
+                script.initialize(matOff, matOn, matEffect, vfxLight, vfxParticle);
             }
     }
 
     private void setNote(OscMessage input)
     {
-        //int pitch = input.GetInt(0);
-        //int velocity = input.GetInt(1);
-        //if (velocity != 0)
-        //{
-        //    noteOn(pitch);
-        //}
-        //else
-        //{
-        //    noteOff(pitch);
-        //}
+        int pitch = input.GetInt(0);
+        int velocity = input.GetInt(1);
+        if (keys.TryGetValue(pitch, out GameObject obj))
+        {
+            Key script = obj.GetComponent<Key>();
+            if (velocity != 0) script.noteOn();
+            else script.noteOff();
+        }
     }
 
     private void setState(OscMessage state)
