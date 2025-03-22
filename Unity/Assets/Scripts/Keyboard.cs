@@ -2,13 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class Note : MonoBehaviour
+public class Keyboard : MonoBehaviour
 {
-    // OSC
-    public OSC osc;
-    public string oscNote;
-    public string oscState;
-
     // Private
     private Dictionary<int, GameObject> keys = new Dictionary<int, GameObject>();
 
@@ -37,17 +32,28 @@ public class Note : MonoBehaviour
         { "B", 11}
     };
 
+    public void initialize(Material matOffWhite, Material matOffBlack, Material matOn, Material matEffect, GameObject vfxLight, GameObject vfxParticle)
+    {
+        this.matOffWhite = matOffWhite;
+        this.matOffBlack = matOffBlack;
+        this.matOn = matOn;
+        this.matEffect = matEffect;
+        this.vfxLight = vfxLight;
+        this.vfxParticle = vfxParticle;
+    }
+
     void Start()
     {
-        // OSC
-        if (osc)
-        {
-            osc.SetAddressHandler(oscNote, setNote);
-            osc.SetAddressHandler(oscState, setState);
-        }
-
-        // Variable
-        assignKeys();
+        // Initialize Keys
+        foreach (Transform octave in transform)
+            foreach (Transform key in octave.transform)
+            {
+                int pitch = keyToPitch(octave.name, key.name);
+                keys[pitch] = key.gameObject;
+                Key script = keys[pitch].AddComponent<Key>();
+                Material matOff = isKeyWhite(key.name) ? matOffWhite : matOffBlack;
+                script.initialize(matOff, matOn, matEffect, vfxLight, vfxParticle);
+            }
     }
 
     // Given an octave and key, return the pitch.
@@ -64,24 +70,8 @@ public class Note : MonoBehaviour
         return key[^1] != '#';
     }
 
-    // Initialize keys
-    private void assignKeys()
+    public void setNote(int pitch, int velocity)
     {
-        foreach (Transform octave in transform)
-            foreach (Transform key in octave.transform)
-            {
-                int pitch = keyToPitch(octave.name, key.name);
-                keys[pitch] = key.gameObject;
-                Key script = keys[pitch].AddComponent<Key>();
-                Material matOff = isKeyWhite(key.name) ? matOffWhite : matOffBlack;
-                script.initialize(matOff, matOn, matEffect, vfxLight, vfxParticle);
-            }
-    }
-
-    private void setNote(OscMessage input)
-    {
-        int pitch = input.GetInt(0);
-        int velocity = input.GetInt(1);
         if (keys.TryGetValue(pitch, out GameObject obj))
         {
             Key script = obj.GetComponent<Key>();
@@ -90,7 +80,7 @@ public class Note : MonoBehaviour
         }
     }
 
-    private void setState(OscMessage state)
+    public void setState(OscMessage state)
     {
         if (state.GetInt(0) == 0)
             foreach (GameObject obj in keys.Values)

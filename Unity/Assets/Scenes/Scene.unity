@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 350921513}
   - component: {fileID: 350921516}
   - component: {fileID: 350921517}
-  - component: {fileID: 350921518}
   - component: {fileID: 350921519}
   m_Layer: 0
   m_Name: Main Camera
@@ -274,27 +273,6 @@ MonoBehaviour:
   inPort: 8000
   outIP: 192.168.0.110
   outPort: 6000
---- !u!114 &350921518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350921512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34d4486d635458841ab2fbafe647777d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  osc: {fileID: 350921517}
-  oscNote: /note
-  oscState: /state
-  matOffWhite: {fileID: 0}
-  matOffBlack: {fileID: 0}
-  matOn: {fileID: 0}
-  matEffect: {fileID: 0}
-  vfxLight: {fileID: 0}
-  vfxParticle: {fileID: 0}
 --- !u!114 &350921519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +293,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 331684962123537618, guid: 1a96e0ab27e924a42a7dd85f5560c4fc, type: 3}
   m_PrefabInstance: {fileID: 3988584914478744999}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &559105695
+--- !u!114 &559105697
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -324,12 +302,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 559105693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34d4486d635458841ab2fbafe647777d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9e176caca5a56db4baa4819bd4786627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   osc: {fileID: 350921517}
   oscNote: /note
   oscState: /state
+  keyboardsSize: 1
   matOffWhite: {fileID: 2100000, guid: cf62ddc4f30256d41b69d3bd1f3b88db, type: 2}
   matOffBlack: {fileID: 2100000, guid: 6c262487d0249294abf958e226df751e, type: 2}
   matOn: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
@@ -721,7 +700,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 331684962123537618, guid: 1a96e0ab27e924a42a7dd85f5560c4fc, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 559105695}
+      addedObject: {fileID: 559105697}
   m_SourcePrefab: {fileID: 100100000, guid: 1a96e0ab27e924a42a7dd85f5560c4fc, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
