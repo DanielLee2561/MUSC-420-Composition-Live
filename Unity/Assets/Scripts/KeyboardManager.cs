@@ -41,10 +41,10 @@ public class KeyboardManager : MonoBehaviour
 
     private void setNote(OscMessage input)
     {
-        int pitch = input.GetInt(0);
-        int velocity = input.GetInt(1);
-        keyboards[0].setNote(pitch, velocity);
-        // specify Keyboard
+        int keyboard = input.GetInt(0);
+        int pitch = input.GetInt(1);
+        int velocity = input.GetInt(2);
+        if (keyboard < keyboards.Length) keyboards[keyboard].setNote(pitch, velocity);
     }
 
     private void setState(OscMessage state)
