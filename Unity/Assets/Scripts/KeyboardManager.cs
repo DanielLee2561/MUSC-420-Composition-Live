@@ -12,7 +12,6 @@ public class KeyboardManager : MonoBehaviour
     private Keyboard[] keyboards;
 
     // Public
-    public int keyboardsSize;
     public Material matOffWhite;
     public Material matOffBlack;
     public Material matOn;
@@ -30,12 +29,11 @@ public class KeyboardManager : MonoBehaviour
             osc.SetAddressHandler(oscState, setState);
         }
 
-        // Assign Keyboards
-        for (int i = 0; i < keyboardsSize; i++)
-        {
-            Keyboard script = gameObject.AddComponent<Keyboard>();
-            script.initialize(matOffWhite, matOffBlack, matOn, matEffect, vfxLight, vfxParticle);
-        }
+        // Add Keyboards
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect, vfxLight, vfxParticle);
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect, vfxLight, vfxParticle);
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect, vfxLight, vfxParticle);
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect, vfxLight, vfxParticle);
         keyboards = gameObject.GetComponents<Keyboard>();
     }
 
