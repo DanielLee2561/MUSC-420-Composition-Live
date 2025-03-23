@@ -5,7 +5,7 @@ using UnityEngine.Rendering;
 public class Keyboard : MonoBehaviour
 {
     // Private
-    private Dictionary<int, GameObject> keys = new Dictionary<int, GameObject>();
+    private Dictionary<int, Key> keys = new Dictionary<int, Key>();
 
     // Public
     public Material matOffWhite;
@@ -49,10 +49,9 @@ public class Keyboard : MonoBehaviour
             foreach (Transform key in octave.transform)
             {
                 int pitch = keyToPitch(octave.name, key.name);
-                keys[pitch] = key.gameObject;
-                Key script = keys[pitch].AddComponent<Key>();
+                keys[pitch] = key.gameObject.AddComponent<Key>();
                 Material matOff = isKeyWhite(key.name) ? matOffWhite : matOffBlack;
-                script.initialize(matOff, matOn, matEffect, vfxLight, vfxParticle);
+                keys[pitch].initialize(matOff, matOn, matEffect, vfxLight, vfxParticle);
             }
     }
 
@@ -72,18 +71,17 @@ public class Keyboard : MonoBehaviour
 
     public void setNote(int pitch, int velocity)
     {
-        if (keys.TryGetValue(pitch, out GameObject obj))
+        if (keys.TryGetValue(pitch, out Key script))
         {
-            Key script = obj.GetComponent<Key>();
             if (velocity != 0) script.noteOn();
             else script.noteOff();
         }
     }
 
-    public void setState(OscMessage state)
+    public void setState(int state)
     {
-        if (state.GetInt(0) == 0)
-            foreach (GameObject obj in keys.Values)
-                obj.GetComponent<Key>().noteOff();
+        if (state == 0)
+            foreach (Key script in keys.Values)
+                script.noteOff();
     }
 }

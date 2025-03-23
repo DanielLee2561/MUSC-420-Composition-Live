@@ -47,10 +47,10 @@ public class KeyboardManager : MonoBehaviour
         if (keyboard < keyboards.Length) keyboards[keyboard].setNote(pitch, velocity);
     }
 
-    private void setState(OscMessage state)
+    private void setState(OscMessage input)
     {
-        //if (state.GetInt(0) == 0)
-        //    foreach (GameObject obj in keys.Values)
-        //        obj.GetComponent<Key>().noteOff();
+        int keyboard = input.GetInt(0);
+        int state = input.GetInt(1);
+        if (keyboard < keyboards.Length) keyboards[keyboard].setState(state);
     }
 }
