@@ -295,13 +295,18 @@ MonoBehaviour:
   matOffWhite: {fileID: 2100000, guid: cf62ddc4f30256d41b69d3bd1f3b88db, type: 2}
   matOffBlack: {fileID: 2100000, guid: 6c262487d0249294abf958e226df751e, type: 2}
   matOn: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
-  matEffect: {fileID: 2100000, guid: cf5b97fe6dbc8db4496941a65f06474d, type: 2}
-  vfxLight: {fileID: 6195392193465969134, guid: 7b0225a6c1271d543bd1f2378d712740, type: 3}
-  vfxParticle: {fileID: 6195392193465969134, guid: 5d130b25933f0f648a16aa245b98b0af, type: 3}
-  color1: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 0}
-  color2: {r: 0.9411765, g: 0.23529412, b: 0.23529412, a: 0}
-  color3: {r: 0.1882353, g: 0.7490196, b: 0.1882353, a: 0}
-  color4: {r: 0.1882353, g: 0.1882353, b: 0.7490196, a: 0}
+  matEffect1: {fileID: 2100000, guid: cf5b97fe6dbc8db4496941a65f06474d, type: 2}
+  matEffect2: {fileID: 2100000, guid: b026027a3bde08940a1f86d34ab26a0f, type: 2}
+  matEffect3: {fileID: 2100000, guid: 706e80b4f9e85a8478ea652796d4f516, type: 2}
+  matEffect4: {fileID: 2100000, guid: 58ba464ff13e3c04a9bc82cc2cfe7433, type: 2}
+  vfxLight1: {fileID: 6195392193465969134, guid: 7b0225a6c1271d543bd1f2378d712740, type: 3}
+  vfxLight2: {fileID: 6195392193465969134, guid: 03d7880e7249bb9429981d6d36ea478e, type: 3}
+  vfxLight3: {fileID: 6195392193465969134, guid: 76fbb805a5073f446a02e55e394aa224, type: 3}
+  vfxLight4: {fileID: 6195392193465969134, guid: 0abcf38b567ddf2499371cc194d49d0c, type: 3}
+  vfxParticle1: {fileID: 6195392193465969134, guid: 5d130b25933f0f648a16aa245b98b0af, type: 3}
+  vfxParticle2: {fileID: 6195392193465969134, guid: 31c9721f1cb98b447b10c4b5166076f5, type: 3}
+  vfxParticle3: {fileID: 6195392193465969134, guid: 48759e95c0e9c2a4c9d90f9747a9cc9b, type: 3}
+  vfxParticle4: {fileID: 6195392193465969134, guid: b5b0a0cbf5098244fb7f3f56dc4b8304, type: 3}
 --- !u!1 &611530047
 GameObject:
   m_ObjectHideFlags: 0
