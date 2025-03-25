@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5554407670228366093}
   - component: {fileID: 2447557575689335706}
   m_Layer: 0
-  m_Name: VFX_Light_Green
+  m_Name: VFX_Particle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,16 +51,16 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 0.5
+      - m_Value: 2
         m_Name: Life_Max
         m_Overridden: 1
       - m_Value: 1.3
         m_Name: Spawn_Width
         m_Overridden: 1
-      - m_Value: 0.25
+      - m_Value: 1
         m_Name: Life_Min
         m_Overridden: 1
-      - m_Value: 5
+      - m_Value: 3
         m_Name: Velocity_X_Range
         m_Overridden: 1
       - m_Value: 0
@@ -69,13 +69,13 @@ VisualEffect:
       - m_Value: 0.15
         m_Name: Size
         m_Overridden: 1
-      - m_Value: 2
+      - m_Value: 1
         m_Name: Velocity_Y_Min
         m_Overridden: 1
-      - m_Value: 3
+      - m_Value: 5
         m_Name: Velocity_Y_Max
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 5
         m_Name: Force
         m_Overridden: 1
     m_Vector2f:
@@ -84,14 +84,14 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: 6.0235295, y: 23.968628, z: 6.0235295, w: 0}
+      - m_Value: {x: 23.968628, y: 23.968628, z: 23.96863, w: 0}
         m_Name: Color
         m_Overridden: 1
     m_Uint:
       m_Array: []
     m_Int:
       m_Array:
-      - m_Value: 300
+      - m_Value: 15
         m_Name: Spawn_Rate
         m_Overridden: 1
     m_Matrix4x4f:
@@ -103,7 +103,10 @@ VisualEffect:
     m_NamedObject:
       m_Array: []
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 1
+        m_Name: Force_Toggle
+        m_Overridden: 1
 --- !u!73398921 &2447557575689335706
 VFXRenderer:
   serializedVersion: 1
