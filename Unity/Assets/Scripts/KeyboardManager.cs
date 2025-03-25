@@ -44,7 +44,11 @@ public class KeyboardManager : MonoBehaviour
 
     private void addKeyboard(Color color)
     {
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect, vfxLight, vfxParticle, color);
+        Material matEffectCopy = new Material(matEffect);
+        matEffectCopy.SetColor("_EmissionColor", color * 5);
+        //GameObject vfxLightCopy = Instantiate(vfxLight);
+        //vfxLightCopy.GetComponent<VisualEffect>().SetVector4("Color", color * 4);
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffectCopy, vfxLight, vfxParticle);
     }
 
     private void setNote(OscMessage input)
