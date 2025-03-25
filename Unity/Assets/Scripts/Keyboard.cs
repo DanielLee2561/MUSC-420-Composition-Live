@@ -14,6 +14,7 @@ public class Keyboard : MonoBehaviour
     public Material matEffect;
     public GameObject vfxLight;
     public GameObject vfxParticle;
+    public Color color;
 
     // Constant
     private Dictionary<string, int> keyPitchDict = new Dictionary<string, int>
@@ -32,7 +33,7 @@ public class Keyboard : MonoBehaviour
         { "B", 11}
     };
 
-    public void initialize(Material matOffWhite, Material matOffBlack, Material matOn, Material matEffect, GameObject vfxLight, GameObject vfxParticle)
+    public void initialize(Material matOffWhite, Material matOffBlack, Material matOn, Material matEffect, GameObject vfxLight, GameObject vfxParticle, Color color)
     {
         this.matOffWhite = matOffWhite;
         this.matOffBlack = matOffBlack;
@@ -40,6 +41,7 @@ public class Keyboard : MonoBehaviour
         this.matEffect = matEffect;
         this.vfxLight = vfxLight;
         this.vfxParticle = vfxParticle;
+        this.color = color;
     }
 
     void Start()
@@ -51,7 +53,7 @@ public class Keyboard : MonoBehaviour
                 int pitch = keyToPitch(octave.name, key.name);
                 keys[pitch] = key.gameObject.AddComponent<Key>();
                 Material matOff = isKeyWhite(key.name) ? matOffWhite : matOffBlack;
-                keys[pitch].initialize(matOff, matOn, matEffect, vfxLight, vfxParticle);
+                keys[pitch].initialize(matOff, matOn, matEffect, vfxLight, vfxParticle, color);
             }
     }
 

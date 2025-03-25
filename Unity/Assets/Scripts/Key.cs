@@ -15,17 +15,19 @@ public class Key : MonoBehaviour
     public Material materialEffect;
     public GameObject vfxLight;
     public GameObject vfxParticle;
+    public Color color;
 
     // Constant
     private static float depth = 0.5f;
 
-    public void initialize(Material materialOff, Material materialOn, Material materialEffect, GameObject vfxLight, GameObject vfxParticle)
+    public void initialize(Material materialOff, Material materialOn, Material materialEffect, GameObject vfxLight, GameObject vfxParticle, Color color)
     {
         this.materialOff = materialOff;
         this.materialOn = materialOn;
         this.materialEffect = materialEffect;
         this.vfxLight = vfxLight;
         this.vfxParticle = vfxParticle;
+        this.color = color;
     }
 
     private void createVFX(ref GameObject obj, GameObject vfxLight)
@@ -34,6 +36,7 @@ public class Key : MonoBehaviour
         {
             obj = Instantiate(vfxLight);
             obj.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + transform.localScale.y / 2);
+            obj.GetComponent<VisualEffect>().SetVector4("Color", color);
         }
     }
     private void removeVFX(ref GameObject obj)
@@ -53,6 +56,7 @@ public class Key : MonoBehaviour
         {
             effect = GameObject.CreatePrimitive(PrimitiveType.Cube);
             effect.AddComponent<KeyEffect>().initialize(gameObject.name, transform.localScale, transform.position, materialEffect);
+            effect.GetComponent<Renderer>().material.SetColor("_EmissionColor", color);
         }
     }
 
