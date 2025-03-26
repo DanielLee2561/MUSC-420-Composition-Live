@@ -14,7 +14,10 @@ public class KeyboardManager : MonoBehaviour
     // Public
     public Material matOffWhite;
     public Material matOffBlack;
-    public Material matOn;
+    public Material matOn1;
+    public Material matOn2;
+    public Material matOn3;
+    public Material matOn4;
     public Material matEffect1;
     public Material matEffect2;
     public Material matEffect3;
@@ -39,10 +42,10 @@ public class KeyboardManager : MonoBehaviour
         }
 
         // Add Keyboards
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect1, vfxLight1, vfxParticle1);
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect2, vfxLight2, vfxParticle2);
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect3, vfxLight3, vfxParticle3);
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn, matEffect4, vfxLight4, vfxParticle4);
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn1, matEffect1, vfxLight1, vfxParticle1);
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn2, matEffect2, vfxLight2, vfxParticle2);
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn3, matEffect3, vfxLight3, vfxParticle3);
+        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn4, matEffect4, vfxLight4, vfxParticle4);
         keyboards = gameObject.GetComponents<Keyboard>();
     }
 

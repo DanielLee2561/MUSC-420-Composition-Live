@@ -294,7 +294,10 @@ MonoBehaviour:
   oscState: /state
   matOffWhite: {fileID: 2100000, guid: cf62ddc4f30256d41b69d3bd1f3b88db, type: 2}
   matOffBlack: {fileID: 2100000, guid: 6c262487d0249294abf958e226df751e, type: 2}
-  matOn: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
+  matOn1: {fileID: 2100000, guid: 2547975c7d2f2bd4aaddf7914ace76b0, type: 2}
+  matOn2: {fileID: 2100000, guid: 3d94adad6f7be9242898b161606a0eac, type: 2}
+  matOn3: {fileID: 2100000, guid: da3724bdc5ffabc428e8a68b6b29e0a5, type: 2}
+  matOn4: {fileID: 2100000, guid: 6dba11d3ee8548b43ac3bc41e7adc5d3, type: 2}
   matEffect1: {fileID: 2100000, guid: cf5b97fe6dbc8db4496941a65f06474d, type: 2}
   matEffect2: {fileID: 2100000, guid: b026027a3bde08940a1f86d34ab26a0f, type: 2}
   matEffect3: {fileID: 2100000, guid: 706e80b4f9e85a8478ea652796d4f516, type: 2}
