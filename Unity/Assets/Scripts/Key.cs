@@ -77,8 +77,8 @@ public class Key : MonoBehaviour
             createEffect();
 
             // VFX
-            createVFX(ref light, vfxLight);
-            createVFX(ref particle, vfxParticle);
+            //createVFX(ref light, vfxLight);
+            //createVFX(ref particle, vfxParticle);
         }
     }
 
@@ -97,8 +97,8 @@ public class Key : MonoBehaviour
             removeEffect();
 
             // VFX
-            removeVFX(ref light);
-            removeVFX(ref particle);
+            //removeVFX(ref light);
+            //removeVFX(ref particle);
         }
     }
 }
