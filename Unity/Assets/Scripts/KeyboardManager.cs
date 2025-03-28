@@ -12,12 +12,10 @@ public class KeyboardManager : MonoBehaviour
     private Keyboard[] keyboards;
 
     // Public
-    public Material matOffWhite;
-    public Material matOffBlack;
-    public Material matOn1;
-    public Material matOn2;
-    public Material matOn3;
-    public Material matOn4;
+    public Color keyColor1;
+    public Color keyColor2;
+    public Color keyColor3;
+    public Color keyColor4;
     public Material matEffect1;
     public Material matEffect2;
     public Material matEffect3;
@@ -42,11 +40,16 @@ public class KeyboardManager : MonoBehaviour
         }
 
         // Add Keyboards
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn1, matEffect1, vfxLight1, vfxParticle1);
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn2, matEffect2, vfxLight2, vfxParticle2);
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn3, matEffect3, vfxLight3, vfxParticle3);
-        gameObject.AddComponent<Keyboard>().initialize(matOffWhite, matOffBlack, matOn4, matEffect4, vfxLight4, vfxParticle4);
+        gameObject.AddComponent<Keyboard>().initialize(keyColor1, matEffect1, vfxLight1, vfxParticle1);
+        gameObject.AddComponent<Keyboard>().initialize(keyColor2, matEffect2, vfxLight2, vfxParticle2);
+        gameObject.AddComponent<Keyboard>().initialize(keyColor3, matEffect3, vfxLight3, vfxParticle3);
+        gameObject.AddComponent<Keyboard>().initialize(keyColor4, matEffect4, vfxLight4, vfxParticle4);
         keyboards = gameObject.GetComponents<Keyboard>();
+
+        // Add Keycolor
+        foreach (Transform octave in transform)
+            foreach (Transform key in octave.transform)
+                key.gameObject.AddComponent<KeyProperty>();
     }
 
     private void setNote(OscMessage input)

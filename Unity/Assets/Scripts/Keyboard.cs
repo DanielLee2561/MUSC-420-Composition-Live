@@ -8,9 +8,7 @@ public class Keyboard : MonoBehaviour
     private Dictionary<int, Key> keys = new Dictionary<int, Key>();
 
     // Public
-    public Material matOffWhite;
-    public Material matOffBlack;
-    public Material matOn;
+    public Color keyColor;
     public Material matEffect;
     public GameObject vfxLight;
     public GameObject vfxParticle;
@@ -32,11 +30,9 @@ public class Keyboard : MonoBehaviour
         { "B", 11}
     };
 
-    public void initialize(Material matOffWhite, Material matOffBlack, Material matOn, Material matEffect, GameObject vfxLight, GameObject vfxParticle)
+    public void initialize(Color keyColor, Material matEffect, GameObject vfxLight, GameObject vfxParticle)
     {
-        this.matOffWhite = matOffWhite;
-        this.matOffBlack = matOffBlack;
-        this.matOn = matOn;
+        this.keyColor = keyColor;
         this.matEffect = matEffect;
         this.vfxLight = vfxLight;
         this.vfxParticle = vfxParticle;
@@ -50,8 +46,7 @@ public class Keyboard : MonoBehaviour
             {
                 int pitch = keyToPitch(octave.name, key.name);
                 keys[pitch] = key.gameObject.AddComponent<Key>();
-                Material matOff = isKeyWhite(key.name) ? matOffWhite : matOffBlack;
-                keys[pitch].initialize(matOff, matOn, matEffect, vfxLight, vfxParticle);
+                keys[pitch].initialize(keyColor, matEffect, vfxLight, vfxParticle);
             }
     }
 
@@ -61,12 +56,6 @@ public class Keyboard : MonoBehaviour
         int pitch_octave = int.Parse(octave.Split('_')[1]);
         int pitch_key = keyPitchDict[key.Split('_')[1]];
         return (pitch_octave + 1) * 12 + pitch_key;
-    }
-
-    // Given a key, return true if white, false otherwise.
-    private bool isKeyWhite(string key)
-    {
-        return key[^1] != '#';
     }
 
     public void setNote(int pitch, int velocity)

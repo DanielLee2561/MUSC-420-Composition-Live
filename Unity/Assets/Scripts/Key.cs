@@ -10,19 +10,14 @@ public class Key : MonoBehaviour
     private GameObject particle;
 
     // Public
-    public Material materialOff;
-    public Material materialOn;
+    public Color keyColor;
     public Material materialEffect;
     public GameObject vfxLight;
     public GameObject vfxParticle;
 
-    // Constant
-    private static float depth = 0.5f;
-
-    public void initialize(Material materialOff, Material materialOn, Material materialEffect, GameObject vfxLight, GameObject vfxParticle)
+    public void initialize(Color keyColor, Material materialEffect, GameObject vfxLight, GameObject vfxParticle)
     {
-        this.materialOff = materialOff;
-        this.materialOn = materialOn;
+        this.keyColor = keyColor;
         this.materialEffect = materialEffect;
         this.vfxLight = vfxLight;
         this.vfxParticle = vfxParticle;
@@ -72,11 +67,9 @@ public class Key : MonoBehaviour
             // State
             state = true;
 
-            // Material
-            GetComponent<Renderer>().material = materialOn;
-
-            // Position
-            transform.position -= new Vector3(0, depth, 0);
+            // Property
+            if (TryGetComponent<KeyProperty>(out KeyProperty script))
+                script.noteOn(keyColor);
 
             // Effect
             createEffect();
@@ -94,11 +87,9 @@ public class Key : MonoBehaviour
             // State
             state = false;
 
-            // Material
-            GetComponent<Renderer>().material = materialOff;
-
-            // Position
-            transform.position += new Vector3(0, depth, 0);
+            // Property
+            if (TryGetComponent<KeyProperty>(out KeyProperty script))
+                script.noteOff(keyColor);
 
             // Effect
             removeEffect();
