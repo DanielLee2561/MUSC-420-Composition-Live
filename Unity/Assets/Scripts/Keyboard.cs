@@ -9,6 +9,7 @@ public class Keyboard : MonoBehaviour
 
     // Public
     public Color keyColor;
+    public Color emissionColor;
     public Material matEffect;
     public GameObject vfxLight;
     public GameObject vfxParticle;
@@ -30,9 +31,10 @@ public class Keyboard : MonoBehaviour
         { "B", 11}
     };
 
-    public void initialize(Color keyColor, Material matEffect, GameObject vfxLight, GameObject vfxParticle)
+    public void initialize(Color keyColor, Color emissionColor, Material matEffect, GameObject vfxLight, GameObject vfxParticle)
     {
         this.keyColor = keyColor;
+        this.emissionColor = emissionColor;
         this.matEffect = matEffect;
         this.vfxLight = vfxLight;
         this.vfxParticle = vfxParticle;
@@ -46,7 +48,7 @@ public class Keyboard : MonoBehaviour
             {
                 int pitch = keyToPitch(octave.name, key.name);
                 keys[pitch] = key.gameObject.AddComponent<Key>();
-                keys[pitch].initialize(keyColor, matEffect, vfxLight, vfxParticle);
+                keys[pitch].initialize(keyColor, emissionColor, matEffect, vfxLight, vfxParticle);
             }
     }
 

@@ -11,13 +11,15 @@ public class Key : MonoBehaviour
 
     // Public
     public Color keyColor;
+    public Color emissionColor;
     public Material materialEffect;
     public GameObject vfxLight;
     public GameObject vfxParticle;
 
-    public void initialize(Color keyColor, Material materialEffect, GameObject vfxLight, GameObject vfxParticle)
+    public void initialize(Color keyColor, Color emissionColor, Material materialEffect, GameObject vfxLight, GameObject vfxParticle)
     {
         this.keyColor = keyColor;
+        this.emissionColor = emissionColor;
         this.materialEffect = materialEffect;
         this.vfxLight = vfxLight;
         this.vfxParticle = vfxParticle;
@@ -69,7 +71,7 @@ public class Key : MonoBehaviour
 
             // Property
             if (TryGetComponent<KeyProperty>(out KeyProperty script))
-                script.noteOn(keyColor);
+                script.noteOn(keyColor, emissionColor);
 
             // Effect
             createEffect();
@@ -89,7 +91,7 @@ public class Key : MonoBehaviour
 
             // Property
             if (TryGetComponent<KeyProperty>(out KeyProperty script))
-                script.noteOff(keyColor);
+                script.noteOff(keyColor, emissionColor);
 
             // Effect
             removeEffect();

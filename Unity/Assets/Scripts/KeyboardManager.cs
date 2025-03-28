@@ -16,6 +16,10 @@ public class KeyboardManager : MonoBehaviour
     public Color keyColor2;
     public Color keyColor3;
     public Color keyColor4;
+    [ColorUsage(false, true)] public Color emissionColor1;
+    [ColorUsage(false, true)] public Color emissionColor2;
+    [ColorUsage(false, true)] public Color emissionColor3;
+    [ColorUsage(false, true)] public Color emissionColor4;
     public Material matEffect1;
     public Material matEffect2;
     public Material matEffect3;
@@ -40,10 +44,10 @@ public class KeyboardManager : MonoBehaviour
         }
 
         // Add Keyboards
-        gameObject.AddComponent<Keyboard>().initialize(keyColor1, matEffect1, vfxLight1, vfxParticle1);
-        gameObject.AddComponent<Keyboard>().initialize(keyColor2, matEffect2, vfxLight2, vfxParticle2);
-        gameObject.AddComponent<Keyboard>().initialize(keyColor3, matEffect3, vfxLight3, vfxParticle3);
-        gameObject.AddComponent<Keyboard>().initialize(keyColor4, matEffect4, vfxLight4, vfxParticle4);
+        gameObject.AddComponent<Keyboard>().initialize(keyColor1, emissionColor1, matEffect1, vfxLight1, vfxParticle1);
+        gameObject.AddComponent<Keyboard>().initialize(keyColor2, emissionColor2, matEffect2, vfxLight2, vfxParticle2);
+        gameObject.AddComponent<Keyboard>().initialize(keyColor3, emissionColor3, matEffect3, vfxLight3, vfxParticle3);
+        gameObject.AddComponent<Keyboard>().initialize(keyColor4, emissionColor4, matEffect4, vfxLight4, vfxParticle4);
         keyboards = gameObject.GetComponents<Keyboard>();
 
         // Add Keycolor
