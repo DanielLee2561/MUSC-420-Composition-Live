@@ -20,8 +20,6 @@ public class KeyboardManager : MonoBehaviour
     [ColorUsage(false, true)] public Color emissionColor2;
     [ColorUsage(false, true)] public Color emissionColor3;
     [ColorUsage(false, true)] public Color emissionColor4;
-    public GameObject vfxLight;
-    public GameObject vfxParticle;
     public Material matEffect1;
     public Material matEffect2;
     public Material matEffect3;
@@ -55,10 +53,7 @@ public class KeyboardManager : MonoBehaviour
         // Add Keycolor
         foreach (Transform octave in transform)
             foreach (Transform key in octave.transform)
-            {
-                KeyProperty script = key.gameObject.AddComponent<KeyProperty>();
-                script.initialize(vfxLight, vfxParticle);
-            }
+                key.gameObject.AddComponent<KeyProperty>();
     }
 
     private void setNote(OscMessage input)
