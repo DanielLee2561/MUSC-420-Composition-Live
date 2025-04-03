@@ -84,7 +84,7 @@ VisualEffect:
       m_Array: []
     m_Vector4f:
       m_Array:
-      - m_Value: {x: 24, y: 6, z: 6, w: 0}
+      - m_Value: {x: 24, y: 1, z: 1, w: 0}
         m_Name: Color
         m_Overridden: 1
     m_Uint:
