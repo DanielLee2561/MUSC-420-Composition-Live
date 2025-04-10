@@ -292,14 +292,14 @@ MonoBehaviour:
   osc: {fileID: 350921517}
   oscNote: /note
   oscState: /state
-  keyColor1: {r: 0.5, g: 0.5, b: 0.5, a: 0}
-  keyColor2: {r: 0.5, g: 0, b: 0, a: 0}
-  keyColor3: {r: 0, g: 0.5, b: 0, a: 0}
-  keyColor4: {r: 0, g: 0, b: 0.5, a: 0}
-  emissionColor1: {r: 1, g: 1, b: 1, a: 0}
-  emissionColor2: {r: 3, g: 0, b: 0, a: 0}
-  emissionColor3: {r: 0, g: 3, b: 0, a: 0}
-  emissionColor4: {r: 0, g: 0, b: 3, a: 0}
+  keyColor1: {r: 1, g: 1, b: 1, a: 0}
+  keyColor2: {r: 1, g: 0, b: 0, a: 0}
+  keyColor3: {r: 0, g: 1, b: 0, a: 0}
+  keyColor4: {r: 0, g: 0, b: 1, a: 0}
+  emissionColor1: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+  emissionColor2: {r: 0.5, g: 0, b: 0, a: 0}
+  emissionColor3: {r: 0, g: 0.5, b: 0, a: 0}
+  emissionColor4: {r: 0, g: 0, b: 0.5, a: 0}
   matEffect1: {fileID: 2100000, guid: cf5b97fe6dbc8db4496941a65f06474d, type: 2}
   matEffect2: {fileID: 2100000, guid: b026027a3bde08940a1f86d34ab26a0f, type: 2}
   matEffect3: {fileID: 2100000, guid: 706e80b4f9e85a8478ea652796d4f516, type: 2}

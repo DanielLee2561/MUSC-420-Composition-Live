@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 76.0, 973.0, 791.0 ],
+		"rect" : [ 34.0, 76.0, 1373.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -95,7 +95,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -354,7 +354,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -707,7 +707,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 102.0, 973.0, 765.0 ],
+						"rect" : [ 34.0, 102.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -985,7 +985,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 973.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1419,6 +1419,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Kontakt 8-Maven.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Kontakt 8.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",

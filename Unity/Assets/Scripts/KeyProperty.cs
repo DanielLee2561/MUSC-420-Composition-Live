@@ -10,7 +10,7 @@ public class KeyProperty : MonoBehaviour
 
     // Constant
     private static float depth = 0.5f;
-    private static float blend = 0.5f;
+    private static float blend = 1.0f;
 
     void Start()
     {
