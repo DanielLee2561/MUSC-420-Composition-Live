@@ -354,7 +354,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
+						"rect" : [ 34.0, 102.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -384,6 +384,46 @@
 						"showontab" : 1,
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-6",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "bpPreset.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 766.0, 255.0, 180.0, 190.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 320.0, 460.0, 180.0, 190.0 ],
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"border" : 2,
+									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
+									"id" : "obj-50",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 60.0, 539.0, 128.0, 128.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 310.0, 450.0, 200.0, 210.0 ],
+									"proportion" : 0.5
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"args" : [ 0, 50 ],
 									"bgmode" : 0,
@@ -422,7 +462,7 @@
 									"numoutlets" : 1,
 									"offset" : [ 0.0, 0.0 ],
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 480.0, 30.0, 260.0, 180.0 ],
+									"patching_rect" : [ 480.0, 30.0, 260.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 240.0, 260.0, 190.0 ],
 									"viewvisibility" : 1
@@ -444,7 +484,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 0,
 									"offset" : [ 0.0, 0.0 ],
-									"patching_rect" : [ 766.0, 30.0, 320.0, 150.0 ],
+									"patching_rect" : [ 766.0, 30.0, 270.0, 150.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 460.0, 270.0, 150.0 ],
 									"viewvisibility" : 1
@@ -578,7 +618,8 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p UserInstrument"
+					"text" : "p UserInstrument",
+					"varname" : "UserInstrument"
 				}
 
 			}
@@ -707,7 +748,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 102.0, 1373.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1130,7 +1171,7 @@
 									"bgfillcolor_proportion" : 0.5,
 									"bgfillcolor_type" : "gradient",
 									"id" : "obj-20",
-									"items" : "Keystation Mini 32 MK3",
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1433,6 +1474,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "aDelayUntilMeasure.maxpat",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "aPanning.maxpat",
 				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
 				"patcherrelativepath" : ".",
@@ -1476,6 +1524,13 @@
 			}
 , 			{
 				"name" : "bpMidiRecorder.maxpat",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bpPreset.maxpat",
 				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
