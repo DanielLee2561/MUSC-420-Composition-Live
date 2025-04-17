@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 36.0, 79.0, 1369.0, 786.0 ],
+		"rect" : [ 1472.0, 74.0, 1456.0, 974.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,47 @@
 		"showontab" : 1,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 675.0, 527.0, 82.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"precision" : 6
+					}
+,
+					"text" : "coll Record_1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 882.0, 273.0, 63.0, 22.0 ],
+					"text" : "writeagain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 807.0, 273.0, 63.0, 22.0 ],
+					"text" : "writeagain"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-50",
 					"maxclass" : "message",
@@ -347,10 +388,10 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 882.0, 249.0, 29.5, 22.0 ],
-					"text" : "t b l"
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "" ],
+					"patching_rect" : [ 882.0, 249.0, 40.0, 22.0 ],
+					"text" : "t b b l"
 				}
 
 			}
@@ -359,10 +400,10 @@
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 807.0, 249.0, 22.0, 22.0 ],
-					"text" : "t b"
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 807.0, 249.0, 32.0, 22.0 ],
+					"text" : "t b b"
 				}
 
 			}
@@ -420,7 +461,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1369.0, 760.0 ],
+						"rect" : [ 0.0, 26.0, 1456.0, 948.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -536,13 +577,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-55",
-									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 31.0, 631.0, 80.0, 36.0 ],
-									"text" : "0 2n 60 64 67"
+									"patching_rect" : [ 31.0, 631.0, 80.0, 22.0 ],
+									"text" : "1 1n"
 								}
 
 							}
@@ -772,7 +812,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 147.75, 246.0, 80.0, 22.0 ],
-									"text" : "60 64 67"
+									"text" : "59"
 								}
 
 							}
@@ -1427,67 +1467,35 @@
 			}
 , 			{
 				"box" : 				{
-					"coll_data" : 					{
-						"count" : 0,
-						"data" : [  ]
-					}
-,
 					"id" : "obj-109",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 675.0, 575.0, 69.0, 22.0 ],
+					"patching_rect" : [ 675.0, 575.0, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
+						"embed" : 0,
 						"precision" : 6
 					}
 ,
-					"text" : "coll User_3"
+					"text" : "coll Record_3"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"coll_data" : 					{
-						"count" : 0,
-						"data" : [  ]
-					}
-,
 					"id" : "obj-108",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 675.0, 551.0, 69.0, 22.0 ],
+					"patching_rect" : [ 675.0, 551.0, 82.0, 22.0 ],
 					"saved_object_attributes" : 					{
-						"embed" : 1,
+						"embed" : 0,
 						"precision" : 6
 					}
 ,
-					"text" : "coll User_2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"coll_data" : 					{
-						"count" : 0,
-						"data" : [  ]
-					}
-,
-					"id" : "obj-107",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 675.0, 527.0, 69.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"embed" : 1,
-						"precision" : 6
-					}
-,
-					"text" : "coll User_1"
+					"text" : "coll Record_2"
 				}
 
 			}
@@ -1526,7 +1534,7 @@
 					"bgfillcolor_proportion" : 0.5,
 					"bgfillcolor_type" : "gradient",
 					"id" : "obj-59",
-					"items" : [ "None", ",", "User_1", ",", "User_2", ",", "User_3" ],
+					"items" : [ "None", ",", "Record_1", ",", "Record_2", ",", "Record_3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -1765,9 +1773,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-44", 0 ],
-					"midpoints" : [ 816.5, 347.0, 684.5, 347.0 ],
+					"destination" : [ "obj-36", 0 ],
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"midpoints" : [ 829.5, 347.0, 684.5, 347.0 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
@@ -1870,8 +1885,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
-					"midpoints" : [ 902.0, 371.0, 684.5, 371.0 ],
-					"source" : [ "obj-3", 1 ]
+					"midpoints" : [ 912.5, 371.0, 684.5, 371.0 ],
+					"source" : [ "obj-3", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -1879,8 +1901,8 @@
 				"patchline" : 				{
 					"color" : [ 1.0, 1.0, 0.0, 0.2 ],
 					"destination" : [ "obj-44", 3 ],
-					"midpoints" : [ 891.5, 285.0, 966.0, 285.0, 966.0, 346.0, 736.5, 346.0 ],
-					"source" : [ "obj-3", 0 ]
+					"midpoints" : [ 902.0, 285.0, 966.0, 285.0, 966.0, 346.0, 736.5, 346.0 ],
+					"source" : [ "obj-3", 1 ]
 				}
 
 			}
@@ -1918,6 +1940,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
 					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"midpoints" : [ 816.5, 293.0, 816.5, 364.0, 796.0, 364.0, 684.5, 364.0 ],
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"midpoints" : [ 891.5, 366.0, 684.5, 366.0 ],
+					"source" : [ "obj-37", 0 ]
 				}
 
 			}
@@ -2071,10 +2109,24 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "Kontakt 8-Maven.maxsnap",
+				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
+				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Kontakt 8.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Record_1.txt",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/data",
+				"patcherrelativepath" : "../data",
+				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{

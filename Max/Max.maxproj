@@ -2,8 +2,8 @@
 	"name" : "Max",
 	"version" : 1,
 	"creationdate" : 3820455764,
-	"modificationdate" : 3827703056,
-	"viewrect" : [ 348.0, 311.0, 300.0, 318.0 ],
+	"modificationdate" : 3827720156,
+	"viewrect" : [ 348.0, 337.0, 300.0, 292.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -58,6 +58,20 @@
 		}
 ,
 		"data" : 		{
+			"Record_1.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"Record_2.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
+,
+			"Record_3.txt" : 			{
+				"kind" : "textfile",
+				"local" : 1
+			}
 
 		}
 

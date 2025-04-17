@@ -2312,7 +2312,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-59",
-					"items" : [ "None", ",", "Note_Single", ",", "Note_1353", ",", "Note_158X", ",", "Chord_MajorTriad", ",", "Test", ",", "User_1", ",", "User_2", ",", "User_3" ],
+					"items" : [ "None", ",", "Note_Single", ",", "Note_1353", ",", "Note_158X", ",", "Chord_MajorTriad", ",", "Test", ",", "Record_1", ",", "Record_2", ",", "Record_3" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
