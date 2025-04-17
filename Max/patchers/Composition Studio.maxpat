@@ -126,11 +126,43 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1201.0, 30.0, 49.0, 22.0 ],
+									"text" : "r preset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1201.0, 54.0, 147.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"client_rect" : [ 100, 100, 500, 600 ],
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"storage_rect" : [ 200, 200, 800, 500 ]
+									}
+,
+									"text" : "pattrstorage MidiRecorder",
+									"varname" : "MidiRecorder"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"id" : "obj-7",
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 198.0, 164.0, 448.0, 20.0 ],
+									"patching_rect" : [ 269.0, 610.0, 448.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 140.0, 280.0, 400.0, 20.0 ],
 									"text" : "Edit the text file for a pattern of notes."
@@ -157,7 +189,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 183.0, 149.0, 448.0, 20.0 ],
+									"patching_rect" : [ 269.0, 588.0, 448.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 140.0, 260.0, 400.0, 20.0 ],
 									"text" : "Reset all data for a pattern of notes."
@@ -184,7 +216,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 168.0, 134.0, 448.0, 20.0 ],
+									"patching_rect" : [ 269.0, 566.0, 448.0, 20.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 140.0, 240.0, 400.0, 20.0 ],
 									"text" : "Mark the end of a note (chord/rest) for a pattern of notes."
@@ -242,6 +274,7 @@
 									"patching_rect" : [ 30.0, 256.0, 210.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 610.0, 20.0, 210.0, 190.0 ],
+									"varname" : "bpFXUnit",
 									"viewvisibility" : 1
 								}
 
@@ -295,6 +328,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -306,7 +346,8 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p MidiRecorder"
+					"text" : "p MidiRecorder",
+					"varname" : "MidiRecorder"
 				}
 
 			}
@@ -385,6 +426,38 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1192.0, 30.0, 49.0, 22.0 ],
+									"text" : "r preset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1192.0, 54.0, 158.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"client_rect" : [ 100, 100, 500, 600 ],
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"storage_rect" : [ 200, 200, 800, 500 ]
+									}
+,
+									"text" : "pattrstorage UserInstrument",
+									"varname" : "UserInstrument"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -442,6 +515,7 @@
 									"patching_rect" : [ 480.0, 255.0, 210.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 280.0, 240.0, 210.0, 190.0 ],
+									"varname" : "bpFXUnit",
 									"viewvisibility" : 1
 								}
 
@@ -465,6 +539,7 @@
 									"patching_rect" : [ 480.0, 30.0, 260.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 240.0, 260.0, 190.0 ],
+									"varname" : "bpMicrophoneInstrument",
 									"viewvisibility" : 1
 								}
 
@@ -487,6 +562,7 @@
 									"patching_rect" : [ 766.0, 30.0, 270.0, 150.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 460.0, 270.0, 150.0 ],
+									"varname" : "bpGlobalControls",
 									"viewvisibility" : 1
 								}
 
@@ -510,6 +586,7 @@
 									"patching_rect" : [ 30.0, 255.0, 210.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 440.0, 20.0, 210.0, 190.0 ],
+									"varname" : "bpFXUnit[1]",
 									"viewvisibility" : 1
 								}
 
@@ -534,6 +611,7 @@
 									"patching_rect" : [ 30.0, 30.0, 420.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 20.0, 420.0, 190.0 ],
+									"varname" : "bpUserInstrument",
 									"viewvisibility" : 1
 								}
 
@@ -604,6 +682,13 @@
 								"patchline" : 								{
 									"destination" : [ "obj-13", 0 ],
 									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-9", 0 ]
 								}
 
 							}
@@ -779,6 +864,38 @@
 						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1154.0, 585.0, 49.0, 22.0 ],
+									"text" : "r preset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1154.0, 609.0, 155.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"client_rect" : [ 100, 100, 500, 600 ],
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"storage_rect" : [ 200, 200, 800, 500 ]
+									}
+,
+									"text" : "pattrstorage MidiInstrument",
+									"varname" : "MidiInstrument"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"args" : [ 0, 50 ],
 									"bgmode" : 0,
 									"border" : 0,
@@ -796,6 +913,7 @@
 									"patching_rect" : [ 1154.0, 256.0, 210.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 580.0, 460.0, 210.0, 190.0 ],
+									"varname" : "bpFXUnit",
 									"viewvisibility" : 1
 								}
 
@@ -820,6 +938,7 @@
 									"patching_rect" : [ 1154.0, 30.0, 560.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 460.0, 560.0, 190.0 ],
+									"varname" : "bpMidiInstrument",
 									"viewvisibility" : 1
 								}
 
@@ -861,6 +980,7 @@
 									"patching_rect" : [ 592.0, 256.0, 210.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 580.0, 240.0, 210.0, 190.0 ],
+									"varname" : "bpFXUnit[1]",
 									"viewvisibility" : 1
 								}
 
@@ -885,6 +1005,7 @@
 									"patching_rect" : [ 592.0, 30.0, 560.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 240.0, 560.0, 190.0 ],
+									"varname" : "bpMidiInstrument[1]",
 									"viewvisibility" : 1
 								}
 
@@ -926,6 +1047,7 @@
 									"patching_rect" : [ 30.0, 256.0, 210.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 580.0, 20.0, 210.0, 190.0 ],
+									"varname" : "bpFXUnit[2]",
 									"viewvisibility" : 1
 								}
 
@@ -950,6 +1072,7 @@
 									"patching_rect" : [ 30.0, 30.0, 560.0, 190.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 20.0, 20.0, 560.0, 190.0 ],
+									"varname" : "bpMidiInstrument[2]",
 									"viewvisibility" : 1
 								}
 
@@ -994,6 +1117,13 @@
 								}
 
 							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
  ]
 					}
 ,
@@ -1005,7 +1135,8 @@
 						"tags" : ""
 					}
 ,
-					"text" : "p MidiInstrument"
+					"text" : "p MidiInstrument",
+					"varname" : "MidiInstrument"
 				}
 
 			}
@@ -1471,6 +1602,27 @@
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
 				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MidiInstrument.json",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "MidiRecorder.json",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "UserInstrument.json",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{

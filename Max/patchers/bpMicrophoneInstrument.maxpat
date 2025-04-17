@@ -40,29 +40,39 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-25",
+					"id" : "obj-16",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1250.0, 32.0, 49.0, 22.0 ],
-					"text" : "r preset"
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1109.0, 56.0, 207.0, 22.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr pInstrument @bindto instrument",
+					"varname" : "pInstrument"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "preset",
+					"id" : "obj-2",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 1250.0, 56.0, 100.0, 40.0 ],
-					"preset_data" : [ 						{
-							"number" : 1,
-							"data" : [ 5, "obj-1", "led", "int", 0, 4, "<invalid>", "kslider", "chord", 5, "obj-3", "umenu", "int", 0 ]
-						}
- ]
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1109.0, 32.0, 123.0, 22.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr pOn @bindto on",
+					"varname" : "pOn"
 				}
 
 			}
@@ -113,7 +123,8 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 224.0, 131.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 105.0, 70.0, 50.0, 50.0 ]
+					"presentation_rect" : [ 105.0, 70.0, 50.0, 50.0 ],
+					"varname" : "microphone"
 				}
 
 			}
@@ -261,7 +272,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 600.0, 131.0, 110.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 57.75, 140.0, 145.0, 22.0 ]
+					"presentation_rect" : [ 57.75, 140.0, 145.0, 22.0 ],
+					"varname" : "instrument"
 				}
 
 			}
@@ -278,7 +290,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 31.0, 131.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ]
+					"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ],
+					"varname" : "on"
 				}
 
 			}
@@ -378,13 +391,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
 					"source" : [ "obj-23", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-25", 0 ]
 				}
 
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1472.0, 74.0, 1456.0, 974.0 ],
+		"rect" : [ 34.0, 76.0, 1373.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -43,22 +43,37 @@
 				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1250.0, 32.0, 49.0, 22.0 ],
-					"text" : "r preset"
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1144.0, 56.0, 207.0, 22.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr pInstrument @bindto instrument",
+					"varname" : "pInstrument"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"maxclass" : "preset",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 1250.0, 56.0, 100.0, 40.0 ]
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1144.0, 32.0, 123.0, 22.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr pOn @bindto on",
+					"varname" : "pOn"
 				}
 
 			}
@@ -373,7 +388,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 619.0, 131.0, 110.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 137.5, 140.0, 145.0, 22.0 ]
+					"presentation_rect" : [ 137.5, 140.0, 145.0, 22.0 ],
+					"varname" : "instrument"
 				}
 
 			}
@@ -405,7 +421,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 31.0, 131.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ]
+					"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ],
+					"varname" : "on"
 				}
 
 			}
@@ -555,13 +572,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-25", 0 ]
 				}
 
 			}

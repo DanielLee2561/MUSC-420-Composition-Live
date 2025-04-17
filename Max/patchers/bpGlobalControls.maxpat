@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 36.0, 79.0, 1369.0, 786.0 ],
+		"rect" : [ 34.0, 76.0, 1373.0, 791.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,29 +40,20 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-9",
+					"id" : "obj-30",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1250.0, 32.0, 49.0, 22.0 ],
-					"text" : "r preset"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-26",
-					"maxclass" : "preset",
 					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 1250.0, 56.0, 100.0, 40.0 ],
-					"preset_data" : [ 						{
-							"number" : 1,
-							"data" : [ 5, "obj-1", "led", "int", 0, 4, "obj-2", "kslider", "chord", 5, "obj-3", "umenu", "int", 0 ]
-						}
- ]
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1171.0, 31.0, 163.0, 22.0 ],
+					"restore" : [ 120 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr pTempo @bindto tempo",
+					"varname" : "pTempo"
 				}
 
 			}
@@ -280,7 +271,8 @@
 					"patching_rect" : [ 421.0, 130.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 140.0, 70.0, 40.0, 40.0 ],
-					"uncheckedcolor" : [ 0.301960784313725, 0.301960784313725, 0.301960784313725, 1.0 ]
+					"uncheckedcolor" : [ 0.301960784313725, 0.301960784313725, 0.301960784313725, 1.0 ],
+					"varname" : "metro"
 				}
 
 			}
@@ -324,7 +316,8 @@
 					"patching_rect" : [ 602.0, 130.0, 53.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 210.0, 70.0, 40.0, 22.0 ],
-					"textcolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ]
+					"textcolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
+					"varname" : "tempo"
 				}
 
 			}
@@ -466,7 +459,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 31.0, 130.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ]
+					"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ],
+					"varname" : "on"
 				}
 
 			}
@@ -714,13 +708,6 @@
 					"color" : [ 1.0, 1.0, 1.0, 0.250980392156863 ],
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-6", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-26", 0 ],
-					"source" : [ "obj-9", 0 ]
 				}
 
 			}

@@ -1,0 +1,43 @@
+{
+	"pattrstorage" : 	{
+		"name" : "MidiInstrument",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"bpMidiInstrument[2]::pOn" : [ 0 ],
+					"bpMidiInstrument[2]::pInstrument" : [ 0 ],
+					"bpMidiInstrument[2]::pPattern" : [ 0 ],
+					"bpMidiInstrument[2]::pNoteRoot" : [ 0 ],
+					"bpMidiInstrument[2]::pNoteOctave" : [ 2 ],
+					"bpMidiInstrument[2]::pNoteVolume" : [ 2 ],
+					"bpFXUnit[2]::pOn" : [ 0 ],
+					"bpFXUnit[2]::pVolume" : [ 0.0 ],
+					"bpFXUnit[2]::pPanning" : [ 20.0 ],
+					"bpMidiInstrument[1]::pOn" : [ 0 ],
+					"bpMidiInstrument[1]::pInstrument" : [ 0 ],
+					"bpMidiInstrument[1]::pPattern" : [ 0 ],
+					"bpMidiInstrument[1]::pNoteRoot" : [ 0 ],
+					"bpMidiInstrument[1]::pNoteOctave" : [ 2 ],
+					"bpMidiInstrument[1]::pNoteVolume" : [ 2 ],
+					"bpFXUnit[1]::pOn" : [ 0 ],
+					"bpFXUnit[1]::pVolume" : [ 0.0 ],
+					"bpFXUnit[1]::pPanning" : [ 80.0 ],
+					"bpMidiInstrument::pOn" : [ 0 ],
+					"bpMidiInstrument::pInstrument" : [ 0 ],
+					"bpMidiInstrument::pPattern" : [ 0 ],
+					"bpMidiInstrument::pNoteRoot" : [ 0 ],
+					"bpMidiInstrument::pNoteOctave" : [ 2 ],
+					"bpMidiInstrument::pNoteVolume" : [ 2 ],
+					"bpFXUnit::pOn" : [ 0 ],
+					"bpFXUnit::pVolume" : [ 0.0 ],
+					"bpFXUnit::pPanning" : [ 50.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

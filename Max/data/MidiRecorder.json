@@ -1,0 +1,19 @@
+{
+	"pattrstorage" : 	{
+		"name" : "MidiRecorder",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"bpFXUnit::pOn" : [ 0 ],
+					"bpFXUnit::pVolume" : [ 0.0 ],
+					"bpFXUnit::pPanning" : [ 50.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

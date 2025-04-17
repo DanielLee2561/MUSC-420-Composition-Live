@@ -40,29 +40,58 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-15",
+					"id" : "obj-18",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1250.0, 32.0, 49.0, 22.0 ],
-					"text" : "r preset"
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1154.0, 78.0, 181.0, 22.0 ],
+					"restore" : [ 0.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr pPanning @bindto panning",
+					"varname" : "pPanning"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-19",
-					"maxclass" : "preset",
+					"id" : "obj-16",
+					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 5,
-					"outlettype" : [ "preset", "int", "preset", "int", "" ],
-					"patching_rect" : [ 1250.0, 56.0, 100.0, 40.0 ],
-					"preset_data" : [ 						{
-							"number" : 1,
-							"data" : [ 5, "obj-1", "led", "int", 0, 4, "obj-2", "kslider", "chord", 5, "obj-3", "umenu", "int", 0 ]
-						}
- ]
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1154.0, 54.0, 173.0, 22.0 ],
+					"restore" : [ 0.0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr pVolume @bindto volume",
+					"varname" : "pVolume"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1154.0, 30.0, 123.0, 22.0 ],
+					"restore" : [ 0 ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr pOn @bindto on",
+					"varname" : "pOn"
 				}
 
 			}
@@ -199,7 +228,8 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 31.0, 129.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ]
+					"presentation_rect" : [ 20.0, 20.0, 34.0, 34.0 ],
+					"varname" : "on"
 				}
 
 			}
@@ -360,7 +390,7 @@
 
 					}
 ,
-					"varname" : "live.dial[1]"
+					"varname" : "volume"
 				}
 
 			}
@@ -392,7 +422,7 @@
 
 					}
 ,
-					"varname" : "live.dial"
+					"varname" : "panning"
 				}
 
 			}
@@ -498,13 +528,6 @@
 					"color" : [ 1.0, 1.0, 1.0, 0.250980392156863 ],
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-19", 0 ],
-					"source" : [ "obj-15", 0 ]
 				}
 
 			}
