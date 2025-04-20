@@ -8,11 +8,11 @@
 					"bpFXUnit::pOn" : [ 0 ],
 					"bpFXUnit::pVolume" : [ 0.0 ],
 					"bpFXUnit::pPanning" : [ 50.0 ],
-					"bpFXUnit::FX::bpFX" : [ 1 ],
 					"bpFXUnit::pReverb" : [ 0 ],
 					"bpFXUnit::pEcho" : [ 0 ],
 					"bpFXUnit::pChorus" : [ 0 ],
-					"bpFXUnit::pFlanger" : [ 0 ]
+					"bpFXUnit::pFlanger" : [ 0 ],
+					"bpFXUnit::FX::bpFX" : [ 1 ]
 				}
 
 			}

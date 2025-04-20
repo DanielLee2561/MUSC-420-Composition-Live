@@ -2,8 +2,8 @@
 	"name" : "Max",
 	"version" : 1,
 	"creationdate" : 3820455764,
-	"modificationdate" : 3827959840,
-	"viewrect" : [ 348.0, 337.0, 300.0, 292.0 ],
+	"modificationdate" : 3828031197,
+	"viewrect" : [ 348.0, 363.0, 300.0, 266.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -54,6 +54,15 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+,
+			"bpAudio.maxpat" : 			{
+				"kind" : "patcher",
+				"local" : 1
+			}
+
+		}
+,
+		"media" : 		{
 
 		}
 ,

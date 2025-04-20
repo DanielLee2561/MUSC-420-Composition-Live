@@ -14,11 +14,11 @@
 					"bpFXUnit[2]::pOn" : [ 0 ],
 					"bpFXUnit[2]::pVolume" : [ 0.0 ],
 					"bpFXUnit[2]::pPanning" : [ 20.0 ],
-					"bpFXUnit[2]::FX::bpFX" : [ 1 ],
 					"bpFXUnit[2]::pReverb" : [ 0 ],
 					"bpFXUnit[2]::pEcho" : [ 0 ],
 					"bpFXUnit[2]::pChorus" : [ 0 ],
 					"bpFXUnit[2]::pFlanger" : [ 0 ],
+					"bpFXUnit[2]::FX::bpFX" : [ 1 ],
 					"bpMidiInstrument[1]::pOn" : [ 1 ],
 					"bpMidiInstrument[1]::pInstrument" : [ 0 ],
 					"bpMidiInstrument[1]::pPattern" : [ 0 ],
@@ -28,11 +28,11 @@
 					"bpFXUnit[1]::pOn" : [ 0 ],
 					"bpFXUnit[1]::pVolume" : [ 0.0 ],
 					"bpFXUnit[1]::pPanning" : [ 80.0 ],
-					"bpFXUnit[1]::FX::bpFX" : [ 1 ],
 					"bpFXUnit[1]::pReverb" : [ 0 ],
 					"bpFXUnit[1]::pEcho" : [ 0 ],
 					"bpFXUnit[1]::pChorus" : [ 0 ],
 					"bpFXUnit[1]::pFlanger" : [ 0 ],
+					"bpFXUnit[1]::FX::bpFX" : [ 1 ],
 					"bpMidiInstrument::pOn" : [ 1 ],
 					"bpMidiInstrument::pInstrument" : [ 0 ],
 					"bpMidiInstrument::pPattern" : [ 0 ],
@@ -42,11 +42,11 @@
 					"bpFXUnit::pOn" : [ 0 ],
 					"bpFXUnit::pVolume" : [ 0.0 ],
 					"bpFXUnit::pPanning" : [ 50.0 ],
-					"bpFXUnit::FX::bpFX" : [ 1 ],
 					"bpFXUnit::pReverb" : [ 0 ],
 					"bpFXUnit::pEcho" : [ 0 ],
 					"bpFXUnit::pChorus" : [ 0 ],
-					"bpFXUnit::pFlanger" : [ 0 ]
+					"bpFXUnit::pFlanger" : [ 0 ],
+					"bpFXUnit::FX::bpFX" : [ 1 ]
 				}
 
 			}

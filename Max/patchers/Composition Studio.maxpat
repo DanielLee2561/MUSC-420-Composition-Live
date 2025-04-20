@@ -41,6 +41,149 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 6,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 34.0, 102.0, 1373.0, 765.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 1,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"showontab" : 1,
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"bgmode" : 0,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-1",
+									"lockeddragscroll" : 0,
+									"lockedsize" : 0,
+									"maxclass" : "bpatcher",
+									"name" : "bpAudio.maxpat",
+									"numinlets" : 0,
+									"numoutlets" : 0,
+									"offset" : [ 0.0, 0.0 ],
+									"patching_rect" : [ 30.0, 31.0, 490.0, 310.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 20.0, 20.0, 490.0, 310.0 ],
+									"varname" : "bpAudio",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-9",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1180.0, 688.0, 49.0, 22.0 ],
+									"text" : "r preset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-8",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1180.0, 712.0, 163.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"client_rect" : [ 100, 134, 483, 496 ],
+										"parameter_enable" : 0,
+										"parameter_mappable" : 0,
+										"storage_rect" : [ 583, 69, 1034, 197 ]
+									}
+,
+									"text" : "pattrstorage AudioInstrument",
+									"varname" : "AudioInstrument"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"border" : 2,
+									"bordercolor" : [ 0.101960784313725, 0.101960784313725, 0.101960784313725, 1.0 ],
+									"id" : "obj-3",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 30.0, 606.0, 128.0, 128.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 10.0, 10.0, 510.0, 330.0 ],
+									"proportion" : 0.5
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-8", 0 ],
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 887.0, 93.0, 105.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p AudioInstrument",
+					"varname" : "MidiInstrument[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -73,7 +216,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 887.0, 156.0, 101.0, 20.0 ],
+					"patching_rect" : [ 887.0, 165.0, 101.0, 20.0 ],
 					"text" : "Subpatches"
 				}
 
@@ -338,7 +481,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 887.0, 92.0, 90.0, 22.0 ],
+					"patching_rect" : [ 887.0, 117.0, 90.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -395,7 +538,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 102.0, 1373.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -1302,7 +1445,7 @@
 									"bgfillcolor_proportion" : 0.5,
 									"bgfillcolor_type" : "gradient",
 									"id" : "obj-20",
-									"items" : "Keystation Mini 32 MK3",
+									"items" : "<empty>",
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1438,7 +1581,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 887.0, 116.0, 62.0, 22.0 ],
+					"patching_rect" : [ 887.0, 141.0, 62.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1471,6 +1614,14 @@
  ],
 		"lines" : [  ],
 		"parameters" : 		{
+			"obj-12::obj-1::obj-1" : [ "live.gain~[21]", "live.gain~[1]", 0 ],
+			"obj-12::obj-1::obj-12" : [ "live.gain~[22]", "live.gain~[1]", 0 ],
+			"obj-12::obj-1::obj-13" : [ "live.gain~[20]", "live.gain~[1]", 0 ],
+			"obj-12::obj-1::obj-14" : [ "live.gain~[18]", "live.gain~[1]", 0 ],
+			"obj-12::obj-1::obj-15" : [ "live.gain~[23]", "live.gain~[1]", 0 ],
+			"obj-12::obj-1::obj-16" : [ "live.gain~[24]", "live.gain~[1]", 0 ],
+			"obj-12::obj-1::obj-5" : [ "live.gain~[17]", "live.gain~[1]", 0 ],
+			"obj-12::obj-1::obj-7" : [ "live.gain~[19]", "live.gain~[1]", 0 ],
 			"obj-15::obj-13::obj-22" : [ "live.gain~[10]", "Output", 0 ],
 			"obj-15::obj-13::obj-23" : [ "live.dial[19]", "Panning", 0 ],
 			"obj-15::obj-13::obj-25" : [ "live.gain~[9]", "Input", 0 ],
@@ -1625,6 +1776,38 @@
 			}
 ,
 			"parameter_overrides" : 			{
+				"obj-12::obj-1::obj-1" : 				{
+					"parameter_longname" : "live.gain~[21]"
+				}
+,
+				"obj-12::obj-1::obj-12" : 				{
+					"parameter_longname" : "live.gain~[22]"
+				}
+,
+				"obj-12::obj-1::obj-13" : 				{
+					"parameter_longname" : "live.gain~[20]"
+				}
+,
+				"obj-12::obj-1::obj-14" : 				{
+					"parameter_longname" : "live.gain~[18]"
+				}
+,
+				"obj-12::obj-1::obj-15" : 				{
+					"parameter_longname" : "live.gain~[23]"
+				}
+,
+				"obj-12::obj-1::obj-16" : 				{
+					"parameter_longname" : "live.gain~[24]"
+				}
+,
+				"obj-12::obj-1::obj-5" : 				{
+					"parameter_longname" : "live.gain~[17]"
+				}
+,
+				"obj-12::obj-1::obj-7" : 				{
+					"parameter_longname" : "live.gain~[19]"
+				}
+,
 				"obj-15::obj-13::obj-22" : 				{
 					"parameter_longname" : "live.gain~[10]"
 				}
@@ -2127,6 +2310,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "AudioInstrument.json",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/data",
+				"patcherrelativepath" : "../data",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Kontakt 8-Maven.maxsnap",
 				"bootpath" : "~/OneDrive/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../../../../OneDrive/Documents/Max 8/Snapshots",
@@ -2142,7 +2332,8 @@
 			}
 , 			{
 				"name" : "M4L.cross1~.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Tools resources",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2210,26 +2401,44 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "birds.wav",
+				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
+				"patcherrelativepath" : "../../../Audio Normalize",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "bp.Chorus.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Effects",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bp.Flanger.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Effects",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bp.Freeverb.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Effects",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "bp.Reverb 1.maxpat",
-				"bootpath" : "C74:/packages/Beap/clippings/BEAP/Effects",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bpAudio.maxpat",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2290,24 +2499,73 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "campfire.wav",
+				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
+				"patcherrelativepath" : "../../../Audio Normalize",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "crickets.wav",
+				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
+				"patcherrelativepath" : "../../../Audio Normalize",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "freeverb.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../../../../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../../../../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "~/AppData/Roaming/Cycling '74/Max 8/examples/gen",
-				"patcherrelativepath" : "../../../../../../AppData/Roaming/Cycling '74/Max 8/examples/gen",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/code",
+				"patcherrelativepath" : "../code",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "leaves.wav",
+				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
+				"patcherrelativepath" : "../../../Audio Normalize",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "rain.wav",
+				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
+				"patcherrelativepath" : "../../../Audio Normalize",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "waterfall.wav",
+				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
+				"patcherrelativepath" : "../../../Audio Normalize",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "waves.wav",
+				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
+				"patcherrelativepath" : "../../../Audio Normalize",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "wind.wav",
+				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
+				"patcherrelativepath" : "../../../Audio Normalize",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
  ],

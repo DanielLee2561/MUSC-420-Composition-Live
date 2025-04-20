@@ -1,0 +1,185 @@
+{
+	"pattrstorage" : 	{
+		"name" : "AudioInstrument",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"bpAudio::audioBirds" : [ 						{
+							"data" : 							{
+								"clips" : [ 									{
+										"absolutepath" : "birds.wav",
+										"filename" : "birds.wav",
+										"filekind" : "audiofile",
+										"id" : "u853001528",
+										"selection" : [ 0.0, 1.0 ],
+										"loop" : 1,
+										"content_state" : 										{
+											"loop" : 1
+										}
+
+									}
+ ]
+							}
+
+						}
+ ],
+					"bpAudio::audioCampfire" : [ 						{
+							"data" : 							{
+								"clips" : [ 									{
+										"absolutepath" : "campfire.wav",
+										"filename" : "campfire.wav",
+										"filekind" : "audiofile",
+										"id" : "u515001538",
+										"selection" : [ 0.0, 1.0 ],
+										"loop" : 1,
+										"content_state" : 										{
+											"loop" : 1
+										}
+
+									}
+ ]
+							}
+
+						}
+ ],
+					"bpAudio::audioCrickets" : [ 						{
+							"data" : 							{
+								"clips" : [ 									{
+										"absolutepath" : "crickets.wav",
+										"filename" : "crickets.wav",
+										"filekind" : "audiofile",
+										"id" : "u348001548",
+										"selection" : [ 0.0, 1.0 ],
+										"loop" : 1,
+										"content_state" : 										{
+											"loop" : 1
+										}
+
+									}
+ ]
+							}
+
+						}
+ ],
+					"bpAudio::audioLeaves" : [ 						{
+							"data" : 							{
+								"clips" : [ 									{
+										"absolutepath" : "leaves.wav",
+										"filename" : "leaves.wav",
+										"filekind" : "audiofile",
+										"id" : "u737001558",
+										"selection" : [ 0.0, 1.0 ],
+										"loop" : 1,
+										"content_state" : 										{
+											"loop" : 1
+										}
+
+									}
+ ]
+							}
+
+						}
+ ],
+					"bpAudio::audioRain" : [ 						{
+							"data" : 							{
+								"clips" : [ 									{
+										"absolutepath" : "rain.wav",
+										"filename" : "rain.wav",
+										"filekind" : "audiofile",
+										"id" : "u335001568",
+										"selection" : [ 0.0, 1.0 ],
+										"loop" : 1,
+										"content_state" : 										{
+											"loop" : 1
+										}
+
+									}
+ ]
+							}
+
+						}
+ ],
+					"bpAudio::audioWaterfall" : [ 						{
+							"data" : 							{
+								"clips" : [ 									{
+										"absolutepath" : "waterfall.wav",
+										"filename" : "waterfall.wav",
+										"filekind" : "audiofile",
+										"id" : "u104001578",
+										"selection" : [ 0.0, 1.0 ],
+										"loop" : 1,
+										"content_state" : 										{
+											"loop" : 1
+										}
+
+									}
+ ]
+							}
+
+						}
+ ],
+					"bpAudio::audioWaves" : [ 						{
+							"data" : 							{
+								"clips" : [ 									{
+										"absolutepath" : "waves.wav",
+										"filename" : "waves.wav",
+										"filekind" : "audiofile",
+										"id" : "u716001588",
+										"selection" : [ 0.0, 1.0 ],
+										"loop" : 1,
+										"content_state" : 										{
+											"loop" : 1
+										}
+
+									}
+ ]
+							}
+
+						}
+ ],
+					"bpAudio::audioWind" : [ 						{
+							"data" : 							{
+								"clips" : [ 									{
+										"absolutepath" : "wind.wav",
+										"filename" : "wind.wav",
+										"filekind" : "audiofile",
+										"id" : "u812001598",
+										"selection" : [ 0.0, 1.0 ],
+										"loop" : 1,
+										"content_state" : 										{
+											"loop" : 1
+										}
+
+									}
+ ]
+							}
+
+						}
+ ],
+					"bpAudio::live.gain~[10]" : [ 0.0 ],
+					"bpAudio::live.gain~[3]" : [ -44.388966716583695 ],
+					"bpAudio::live.gain~[4]" : [ -23.859523694507516 ],
+					"bpAudio::live.gain~[5]" : [ 0.0 ],
+					"bpAudio::live.gain~[6]" : [ 0.0 ],
+					"bpAudio::live.gain~[7]" : [ 0.0 ],
+					"bpAudio::live.gain~[8]" : [ 0.0 ],
+					"bpAudio::live.gain~[9]" : [ 0.0 ],
+					"bpAudio::on" : [ 1 ],
+					"bpAudio::onBirds" : [ 1 ],
+					"bpAudio::onCampfire" : [ 1 ],
+					"bpAudio::onCrickets" : [ 0 ],
+					"bpAudio::onLeaves" : [ 0 ],
+					"bpAudio::onRain" : [ 0 ],
+					"bpAudio::onWaterfall" : [ 0 ],
+					"bpAudio::onWaves" : [ 0 ],
+					"bpAudio::onWind" : [ 0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
