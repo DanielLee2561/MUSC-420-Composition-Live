@@ -2,7 +2,7 @@
 	"name" : "Max",
 	"version" : 1,
 	"creationdate" : 3820455764,
-	"modificationdate" : 3827720156,
+	"modificationdate" : 3827959840,
 	"viewrect" : [ 348.0, 337.0, 300.0, 292.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -54,6 +54,10 @@
 				"kind" : "patcher",
 				"local" : 1
 			}
+
+		}
+,
+		"code" : 		{
 
 		}
 ,

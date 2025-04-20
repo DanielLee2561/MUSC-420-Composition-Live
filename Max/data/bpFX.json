@@ -1,0 +1,36 @@
+{
+	"pattrstorage" : 	{
+		"name" : "bpFX",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"bp.Reverb::Cutoff" : [ 10000.0 ],
+					"bp.Reverb::Mix" : [ 50.0 ],
+					"bp.Reverb::Reflections" : [ 90.0 ],
+					"bp.Reverb::Time" : [ 6000.0 ],
+					"bp.Reverb::bypass" : [ 0.0 ],
+					"bp.Flanger::Center" : [ 1000.000000000000227 ],
+					"bp.Flanger::Rate" : [ 0.3 ],
+					"bp.Flanger::Regen" : [ 0.5 ],
+					"bp.Flanger::Width" : [ 300.0 ],
+					"bp.Flanger::bypass" : [ 0.0 ],
+					"bp.Chorus::Center" : [ 500.0 ],
+					"bp.Chorus::Rate" : [ 1.0 ],
+					"bp.Chorus::Regen" : [ 0.6 ],
+					"bp.Chorus::Width" : [ 60.000000000000021 ],
+					"bp.Chorus::bypass" : [ 0.0 ],
+					"bp.Freeverb::Damp" : [ 0.6 ],
+					"bp.Freeverb::Dry" : [ 90.0 ],
+					"bp.Freeverb::Feedback1" : [ 0.9 ],
+					"bp.Freeverb::Feedback2" : [ 0.9 ],
+					"bp.Freeverb::bypass" : [ 0.0 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}

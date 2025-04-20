@@ -7,15 +7,25 @@
 				"data" : 				{
 					"bpUserInstrument::pOn" : [ 1 ],
 					"bpUserInstrument::pInstrument" : [ 1 ],
-					"bpFXUnit[1]::pOn" : [ 1 ],
+					"bpFXUnit[1]::pOn" : [ 0 ],
 					"bpFXUnit[1]::pVolume" : [ 0.0 ],
-					"bpFXUnit[1]::pPanning" : [ 66.0 ],
+					"bpFXUnit[1]::pPanning" : [ 50.0 ],
+					"bpFXUnit[1]::FX::bpFX" : [ 1 ],
+					"bpFXUnit[1]::pReverb" : [ 1 ],
+					"bpFXUnit[1]::pEcho" : [ 1 ],
+					"bpFXUnit[1]::pChorus" : [ 1 ],
+					"bpFXUnit[1]::pFlanger" : [ 1 ],
 					"bpGlobalControls::pTempo" : [ 120 ],
 					"bpMicrophoneInstrument::pOn" : [ 1 ],
-					"bpMicrophoneInstrument::pInstrument" : [ 1 ],
+					"bpMicrophoneInstrument::pInstrument" : [ 0 ],
 					"bpFXUnit::pOn" : [ 0 ],
 					"bpFXUnit::pVolume" : [ 0.0 ],
-					"bpFXUnit::pPanning" : [ 50.0 ]
+					"bpFXUnit::pPanning" : [ 50.0 ],
+					"bpFXUnit::FX::bpFX" : [ 1 ],
+					"bpFXUnit::pReverb" : [ 0 ],
+					"bpFXUnit::pEcho" : [ 0 ],
+					"bpFXUnit::pChorus" : [ 0 ],
+					"bpFXUnit::pFlanger" : [ 0 ]
 				}
 
 			}
