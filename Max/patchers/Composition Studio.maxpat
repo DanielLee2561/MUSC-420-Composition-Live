@@ -41,6 +41,33 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 183.0, 127.0, 448.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 140.0, 102.0, 400.0, 20.0 ],
+					"text" : "Play sound from an Audio File."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 60.0, 127.0, 121.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 20.0, 102.0, 120.0, 20.0 ],
+					"text" : "Audio Instrument"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
@@ -56,7 +83,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 102.0, 1373.0, 765.0 ],
+						"rect" : [ 0.0, 26.0, 1373.0, 765.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -190,7 +217,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 168.0, 134.0, 448.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.0, 100.0, 400.0, 20.0 ],
+					"presentation_rect" : [ 140.0, 124.0, 400.0, 20.0 ],
 					"text" : "Record a Pattern of Notes."
 				}
 
@@ -204,7 +231,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 45.0, 134.0, 121.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 100.0, 120.0, 20.0 ],
+					"presentation_rect" : [ 20.0, 124.0, 120.0, 20.0 ],
 					"text" : "Midi Recorder"
 				}
 
@@ -502,7 +529,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 168.0, 156.0, 448.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 140.0, 120.0, 400.0, 20.0 ],
+					"presentation_rect" : [ 140.0, 144.0, 400.0, 20.0 ],
 					"text" : "Select a MIDI Input Device."
 				}
 
@@ -516,7 +543,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 45.0, 156.0, 121.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 20.0, 120.0, 120.0, 20.0 ],
+					"presentation_rect" : [ 20.0, 144.0, 120.0, 20.0 ],
 					"text" : "Settings"
 				}
 
@@ -1606,7 +1633,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 45.0, 502.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 10.0, 10.0, 540.0, 140.0 ],
+					"presentation_rect" : [ 10.0, 10.0, 540.0, 170.0 ],
 					"proportion" : 0.5
 				}
 
@@ -2402,8 +2429,8 @@
 			}
 , 			{
 				"name" : "birds.wav",
-				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
-				"patcherrelativepath" : "../../../Audio Normalize",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -2500,15 +2527,15 @@
 			}
 , 			{
 				"name" : "campfire.wav",
-				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
-				"patcherrelativepath" : "../../../Audio Normalize",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "crickets.wav",
-				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
-				"patcherrelativepath" : "../../../Audio Normalize",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
@@ -2535,36 +2562,36 @@
 			}
 , 			{
 				"name" : "leaves.wav",
-				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
-				"patcherrelativepath" : "../../../Audio Normalize",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "rain.wav",
-				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
-				"patcherrelativepath" : "../../../Audio Normalize",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "waterfall.wav",
-				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
-				"patcherrelativepath" : "../../../Audio Normalize",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "waves.wav",
-				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
-				"patcherrelativepath" : "../../../Audio Normalize",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "wind.wav",
-				"bootpath" : "~/Desktop/File History/MUSC 420/Audio Normalize",
-				"patcherrelativepath" : "../../../Audio Normalize",
+				"bootpath" : "~/Desktop/File History/MUSC 420/MUSC-420-Composition-Live/Max/media",
+				"patcherrelativepath" : "../media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
