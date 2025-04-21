@@ -2,7 +2,6 @@
 
 **Video**
 
-- [Blog]
 - [UBC Bang! Festival]
 
 **Description**
@@ -18,7 +17,7 @@
 
 **Setup**
 
-- []
+- Open "Max.maxproj" -> "Composition Studio.maxpat"
 
 **Citation Instrument**
 
